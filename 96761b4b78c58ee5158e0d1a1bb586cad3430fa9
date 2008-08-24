@@ -1,0 +1,63 @@
+svn-revision: 8
+svn-path: /
+svn-author: hobnob13
+svn-date: 2008-04-14T20:36:45.786235Z
+changed-paths:
+   M /trunk/main-src/
+   M /trunk/main-src/Code/!atoms.dm
+   A /trunk/main-src/Code/Machinery/Atmoalter/
+   A /trunk/main-src/Code/Machinery/Atmoalter/_atmoalter.dm
+   A /trunk/main-src/Code/Machinery/Atmoalter/canister.dm
+   A /trunk/main-src/Code/Machinery/Atmoalter/heater.dm
+   A /trunk/main-src/Code/Machinery/Atmoalter/siphs.dm
+   A /trunk/main-src/Code/Machinery/_machinery.dm
+   A /trunk/main-src/Code/Machinery/_pipe_misc.dm
+   A /trunk/main-src/Code/Machinery/alarm.dm
+   A /trunk/main-src/Code/Machinery/at_indicator.dm
+   A /trunk/main-src/Code/Machinery/autolathe.dm
+   A /trunk/main-src/Code/Machinery/camera.dm
+   A /trunk/main-src/Code/Machinery/cell_charger.dm
+   A /trunk/main-src/Code/Machinery/circulator.dm
+   A /trunk/main-src/Code/Machinery/connector.dm
+   A /trunk/main-src/Code/Machinery/dispenser.dm
+   A /trunk/main-src/Code/Machinery/door_control.dm
+   A /trunk/main-src/Code/Machinery/firealarm.dm
+   A /trunk/main-src/Code/Machinery/gas_sensor.dm
+   A /trunk/main-src/Code/Machinery/igniter.dm
+   A /trunk/main-src/Code/Machinery/injector.dm
+   A /trunk/main-src/Code/Machinery/inlet.dm
+   A /trunk/main-src/Code/Machinery/junction.dm
+   A /trunk/main-src/Code/Machinery/light_switch.dm
+   A /trunk/main-src/Code/Machinery/manifold.dm
+   A /trunk/main-src/Code/Machinery/pipeline.dm
+   A /trunk/main-src/Code/Machinery/pipes.dm
+   M /trunk/main-src/Code/Machinery/recharger.dm
+   A /trunk/main-src/Code/Machinery/sec_lock.dm
+   A /trunk/main-src/Code/Machinery/valve.dm
+   A /trunk/main-src/Code/Machinery/vent.dm
+   M /trunk/main-src/Code/_debug.dm
+   M /trunk/main-src/Code/aaaDefines.dm
+   M /trunk/main-src/Code/airtunnel.dm
+   M /trunk/main-src/Code/atmo_control.dm
+   M /trunk/main-src/Code/blob.dm
+   M /trunk/main-src/Code/cell_process.dm
+   M /trunk/main-src/Code/chemical.dm
+   M /trunk/main-src/Code/computer.dm
+   M /trunk/main-src/Code/cryo.dm
+   M /trunk/main-src/Code/demo.dm
+   M /trunk/main-src/Code/demo2.dm
+   M /trunk/main-src/Code/engine.dm
+   M /trunk/main-src/Code/globals.dm
+   M /trunk/main-src/Code/items.dm
+   M /trunk/main-src/Code/newitems.dm
+   M /trunk/main-src/Code/newobjects.dm
+   M /trunk/main-src/Code/power.dm
+   D /trunk/main-src/Code/newpipe.dm
+   M /trunk/main-src/Icons/b_items.dmi
+   M /trunk/main-src/Icons/l_items.dmi
+   M /trunk/main-src/Icons/pipes.dmi
+   M /trunk/main-src/Icons/r_items.dmi
+   M /trunk/main-src/spacestation13.dme
+   M /trunk/main-src/ss13h.dmp
+node-properties (as set in this revision):
+   /trunk/main-src: svn:ignore='main-src.dme\n'

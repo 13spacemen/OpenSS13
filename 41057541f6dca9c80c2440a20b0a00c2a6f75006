@@ -1,0 +1,7 @@
+svn-revision: 67
+svn-path: /trunk
+svn-author: stephen001
+svn-date: 2008-06-21T02:01:39.985754Z
+changed-paths:
+   M /branches/1.0-rc-1/Code/Machinery/cryocell.dm
+   M /trunk/Code/Machinery/cryocell.dm

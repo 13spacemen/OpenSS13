@@ -1,0 +1,26 @@
+svn-revision: 57
+svn-path: /trunk
+svn-author: shadowlord13
+svn-date: 2008-06-18T21:06:31.714347Z
+changed-paths:
+   M /trunk/Code/Machinery/Atmoalter/canister.dm
+   M /trunk/Code/Machinery/Computer/atmosphere.dm
+   M /trunk/Code/Machinery/Computer/communications.dm
+   M /trunk/Code/Machinery/Computer/data.dm
+   M /trunk/Code/Machinery/Computer/hologram.dm
+   M /trunk/Code/Machinery/Computer/prision_shuttle.dm
+   M /trunk/Code/Machinery/Computer/shuttle.dm
+   M /trunk/Code/Machinery/cryocell.dm
+   M /trunk/Code/Machinery/pod.dm
+   M /trunk/Code/Machinery/recon.dm
+   M /trunk/Code/Machinery/sleeper.dm
+   M /trunk/Code/demo.dm
+   M /trunk/Code/dna.dm
+   M /trunk/Code/items.dm
+   M /trunk/Code/mob/ai.dm
+   M /trunk/Code/mob/drone.dm
+   M /trunk/Code/mob.dm
+   M /trunk/Code/shuttle.dm
+   M /trunk/Code/weap_sat.dm
+   M /trunk/Code/weapons.dm
+   M /trunk/Icons/stationobjs.dmi

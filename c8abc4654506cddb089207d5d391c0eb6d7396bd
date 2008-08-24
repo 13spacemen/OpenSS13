@@ -1,0 +1,9 @@
+svn-revision: 79
+svn-path: /branches/1.0-rc-2
+svn-author: Zjm7891
+svn-date: 2008-06-25T08:04:07.089143Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/Machinery/turrets.dm
+   M /branches/1.0-rc-2/Code/items.dm
+   M /branches/1.0-rc-2/Code/mob.dm
+   M /branches/1.0-rc-2/Code/ss13_algorithm2.dm

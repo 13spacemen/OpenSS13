@@ -1,0 +1,33 @@
+svn-revision: 118
+svn-path: /tags/1.0
+svn-author: hobnob13
+svn-date: 2008-08-19T22:29:48.190032Z
+changed-paths:
+   M /tags/1.0/Code/!atoms.dm
+   A /tags/1.0/Code/Item/Weapon/pipe.dm
+   M /tags/1.0/Code/Machinery/Power/solar_control.dm
+   M /tags/1.0/Code/Machinery/_machinery.dm
+   M /tags/1.0/Code/Machinery/_pipe_misc.dm
+   M /tags/1.0/Code/Machinery/autolathe.dm
+   M /tags/1.0/Code/Machinery/circulator.dm
+   M /tags/1.0/Code/Machinery/connector.dm
+   M /tags/1.0/Code/Machinery/cryocell.dm
+   M /tags/1.0/Code/Machinery/freezer.dm
+   M /tags/1.0/Code/Machinery/inlet.dm
+   M /tags/1.0/Code/Machinery/junction.dm
+   M /tags/1.0/Code/Machinery/manifold.dm
+   M /tags/1.0/Code/Machinery/meter.dm
+   M /tags/1.0/Code/Machinery/pipeline.dm
+   M /tags/1.0/Code/Machinery/pipes.dm
+   M /tags/1.0/Code/Machinery/valve.dm
+   M /tags/1.0/Code/Machinery/vent.dm
+   A /tags/1.0/Code/Object/
+   A /tags/1.0/Code/Object/brokenpipe.dm
+   M /tags/1.0/Code/_debug.dm
+   M /tags/1.0/Code/cellautomata.dm
+   M /tags/1.0/Code/chemical.dm
+   M /tags/1.0/Code/computer.dm
+   M /tags/1.0/Code/demo.dm
+   M /tags/1.0/Code/items.dm
+   M /tags/1.0/Code/mob.dm
+   M /tags/1.0/Code/newitems.dm

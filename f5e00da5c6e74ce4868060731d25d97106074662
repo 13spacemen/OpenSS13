@@ -1,0 +1,7 @@
+svn-revision: 87
+svn-path: /branches/1.0-rc-2
+svn-author: Zjm7891
+svn-date: 2008-06-28T07:59:50.910971Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/cellautomata.dm
+   M /branches/1.0-rc-2/spacestation13.dme

@@ -1,0 +1,7 @@
+svn-revision: 81
+svn-path: /
+svn-author: Zjm7891
+svn-date: 2008-06-26T01:06:31.760317Z
+changed-paths:
+   A /branches/1.0-rc-2/Code/Item/Weapon/weldingtool.dm
+   M /branches/1.0-rc-2/spacestation13.dme

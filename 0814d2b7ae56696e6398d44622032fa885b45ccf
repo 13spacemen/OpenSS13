@@ -1,0 +1,17 @@
+svn-revision: 31
+svn-path: /trunk
+svn-author: shadowlord13
+svn-date: 2008-05-30T10:36:46.424064Z
+changed-paths:
+   M /trunk/Icons/Icons.dmi
+   M /trunk/Icons/alert.dmi
+   M /trunk/Icons/b_items.dmi
+   M /trunk/Icons/blob.dmi
+   M /trunk/Icons/items.dmi
+   M /trunk/Icons/l_items.dmi
+   M /trunk/Icons/power.dmi
+   M /trunk/Icons/r_items.dmi
+   M /trunk/Icons/screen.dmi
+   M /trunk/Icons/screen1.dmi
+   M /trunk/Icons/shuttle.dmi
+   M /trunk/Icons/weap_sat.dmi

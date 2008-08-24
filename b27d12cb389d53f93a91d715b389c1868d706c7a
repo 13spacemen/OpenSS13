@@ -1,0 +1,8 @@
+svn-revision: 38
+svn-path: /
+svn-author: stephen001
+svn-date: 2008-06-07T00:26:29.579596Z
+changed-paths:
+   A /contributor-docs/project-conventions/bug-tracking.txt
+   A /contributor-docs/project-conventions/release-process.txt
+   M /trunk/Code/mob.dm

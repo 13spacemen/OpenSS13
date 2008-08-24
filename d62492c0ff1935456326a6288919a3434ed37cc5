@@ -1,0 +1,7 @@
+svn-revision: 50
+svn-path: /
+svn-author: stephen001
+svn-date: 2008-06-08T21:18:43.438666Z
+changed-paths:
+   M /trunk/Code/globals.dm
+   M /trunk/Code/items.dm

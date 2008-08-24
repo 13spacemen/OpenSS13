@@ -1,0 +1,8 @@
+svn-revision: 14
+svn-path: /
+svn-author: hobnob13
+svn-date: 2008-04-26T00:26:39.143282Z
+changed-paths:
+   M /trunk/main-src/Code/Machinery/Power/apc.dm
+   M /trunk/main-src/Code/Machinery/Power/monitor.dm
+   M /trunk/main-src/Code/globals.dm

@@ -1,0 +1,6 @@
+svn-revision: 89
+svn-path: /branches/1.0-rc-2
+svn-author: Zjm7891
+svn-date: 2008-06-28T08:31:21.745877Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/Machinery/sec_lock.dm

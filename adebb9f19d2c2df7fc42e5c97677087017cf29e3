@@ -1,0 +1,10 @@
+svn-revision: 97
+svn-path: /
+svn-author: Zjm7891
+svn-date: 2008-07-10T03:30:20.798955Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/datumvars.dm
+   M /branches/1.0-rc-2/Code/globals.dm
+   M /branches/1.0-rc-2/Code/mob.dm
+   M /branches/1.0-rc-2/spacestation13.dme
+   M /branches/1.0-rc-2/ss13h_new.dmp

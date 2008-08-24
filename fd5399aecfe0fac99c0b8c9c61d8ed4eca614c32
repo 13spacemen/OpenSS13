@@ -1,0 +1,7 @@
+svn-revision: 63
+svn-path: /branches/1.0-rc-1
+svn-author: stephen001
+svn-date: 2008-06-21T00:05:22.820009Z
+changed-paths:
+   M /branches/1.0-rc-1/Code/dna.dm
+   M /trunk/Code/dna.dm

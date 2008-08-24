@@ -1,0 +1,24 @@
+svn-revision: 13
+svn-path: /
+svn-author: hobnob13
+svn-date: 2008-04-25T23:37:41.645989Z
+changed-paths:
+   M /trunk/main-src/Code/!atoms.dm
+   A /trunk/main-src/Code/Machinery/Door/
+   A /trunk/main-src/Code/Machinery/Door/_door.dm
+   A /trunk/main-src/Code/Machinery/Door/airlock.dm
+   A /trunk/main-src/Code/Machinery/Door/false_wall.dm
+   A /trunk/main-src/Code/Machinery/Door/firedoor.dm
+   A /trunk/main-src/Code/Machinery/Door/poddoor.dm
+   A /trunk/main-src/Code/Machinery/Door/window.dm
+   M /trunk/main-src/Code/Machinery/Power/solar.dm
+   M /trunk/main-src/Code/Machinery/Power/solar_control.dm
+   A /trunk/main-src/Code/Machinery/meter.dm
+   M /trunk/main-src/Code/atmo_control.dm
+   M /trunk/main-src/Code/computer.dm
+   M /trunk/main-src/Code/demo.dm
+   M /trunk/main-src/Code/globals.dm
+   M /trunk/main-src/Code/mob.dm
+   M /trunk/main-src/Icons/power.dmi
+   M /trunk/main-src/spacestation13.dme
+   M /trunk/main-src/ss13h.dmp

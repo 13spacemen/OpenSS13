@@ -1,0 +1,14 @@
+svn-revision: 6
+svn-path: /
+svn-author: stephen001
+svn-date: 2008-04-12T07:08:51.674493Z
+changed-paths:
+   A /management-scripts/linux/automated-build-server/
+   A /management-scripts/linux/automated-build-server/Makefile
+   A /management-scripts/linux/automated-build-server/build-version.sh
+   A /management-scripts/linux/automated-build-server/configuration.sh
+   A /management-scripts/linux/automated-build-server/load-version.sh
+   A /management-scripts/linux/automated-build-server/rotate-logs.sh
+   A /management-scripts/linux/automated-build-server/svn-update.sh
+node-properties (as set in this revision):
+   /management-scripts/linux/automated-build-server/build-version.sh: svn:executable='*'

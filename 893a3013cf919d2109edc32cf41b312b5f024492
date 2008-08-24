@@ -1,0 +1,15 @@
+svn-revision: 10
+svn-path: /trunk
+svn-author: hobnob13
+svn-date: 2008-04-16T06:41:35.091120Z
+changed-paths:
+   M /trunk/main-src/Code/!atoms.dm
+   A /trunk/main-src/Code/Machinery/Power/
+   A /trunk/main-src/Code/Machinery/Power/_power.dm
+   A /trunk/main-src/Code/Machinery/Power/apc.dm
+   A /trunk/main-src/Code/Machinery/Power/monitor.dm
+   A /trunk/main-src/Code/Machinery/Power/solar.dm
+   A /trunk/main-src/Code/Machinery/Power/solar_control.dm
+   A /trunk/main-src/Code/Machinery/Power/terminal.dm
+   M /trunk/main-src/Code/power.dm
+   M /trunk/main-src/spacestation13.dme

@@ -1,0 +1,13 @@
+svn-revision: 95
+svn-path: /
+svn-author: Zjm7891
+svn-date: 2008-07-08T15:24:05.497160Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/Machinery/Computer/atmosphere.dm
+   M /branches/1.0-rc-2/Code/Machinery/Computer/communications.dm
+   M /branches/1.0-rc-2/Code/Machinery/Computer/prision_shuttle.dm
+   M /branches/1.0-rc-2/Code/Machinery/Computer/shuttle.dm
+   M /branches/1.0-rc-2/Code/Machinery/valve.dm
+   M /branches/1.0-rc-2/Code/cellautomata.dm
+   M /branches/1.0-rc-2/Code/demo.dm
+   M /branches/1.0-rc-2/Code/dna.dm

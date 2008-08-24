@@ -1,0 +1,6 @@
+svn-revision: 83
+svn-path: /branches/1.0-rc-2
+svn-author: hobnob13
+svn-date: 2008-06-26T02:42:56.323969Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/Item/Weapon/weldingtool.dm

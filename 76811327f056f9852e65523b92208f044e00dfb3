@@ -1,0 +1,8 @@
+svn-revision: 85
+svn-path: /
+svn-author: Zjm7891
+svn-date: 2008-06-28T06:14:26.983661Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/items.dm
+   M /branches/1.0-rc-2/Code/mob.dm
+   M /branches/1.0-rc-2/spacestation13.dme

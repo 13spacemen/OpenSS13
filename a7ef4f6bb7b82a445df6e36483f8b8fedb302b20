@@ -1,0 +1,7 @@
+svn-revision: 69
+svn-path: /branches/1.0-rc-1
+svn-author: stephen001
+svn-date: 2008-06-21T22:24:23.408551Z
+changed-paths:
+   M /branches/1.0-rc-1/Code/items.dm
+   M /branches/1.0-rc-1/spacestation13.dme

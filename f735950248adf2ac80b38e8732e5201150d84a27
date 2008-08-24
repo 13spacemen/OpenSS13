@@ -1,0 +1,12 @@
+svn-revision: 33
+svn-path: /
+svn-author: shadowlord13
+svn-date: 2008-05-30T17:16:15.071443Z
+changed-paths:
+   M /trunk/Code/Machinery/Computer/card.dm
+   M /trunk/Code/Machinery/Computer/med_data.dm
+   M /trunk/Code/Machinery/Computer/secure_data.dm
+   M /trunk/Code/Machinery/cryocell.dm
+   M /trunk/Code/Machinery/freezer.dm
+   M /trunk/Code/Machinery/sleeper.dm
+   M /trunk/Code/globals.dm

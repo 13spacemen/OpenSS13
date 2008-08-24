@@ -1,0 +1,12 @@
+svn-revision: 2
+svn-path: /trunk
+svn-author: stephen001
+svn-date: 2008-04-07T00:47:52.802688Z
+changed-paths:
+   M /trunk/main-src/Code/!atoms.dm
+   A /trunk/main-src/Code/Item/
+   A /trunk/main-src/Code/Item/Weapon/
+   A /trunk/main-src/Code/Machinery/
+   A /trunk/main-src/Code/Machinery/recharger.dm
+   M /trunk/main-src/Code/items.dm
+   M /trunk/main-src/spacestation13.dme

@@ -1,0 +1,8 @@
+svn-revision: 91
+svn-path: /
+svn-author: Zjm7891
+svn-date: 2008-07-08T11:46:50.551782Z
+changed-paths:
+   M /branches/1.0-rc-2/Code/Machinery/Power/apc.dm
+   M /branches/1.0-rc-2/Code/items.dm
+   M /branches/1.0-rc-2/spacestation13.dme

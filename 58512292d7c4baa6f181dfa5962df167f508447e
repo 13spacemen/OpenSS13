@@ -1,0 +1,43 @@
+svn-revision: 19
+svn-path: /
+svn-author: hobnob13
+svn-date: 2008-05-02T15:28:38.011390Z
+changed-paths:
+   M /trunk/main-src/Code/!atoms.dm
+   M /trunk/main-src/Code/Machinery/Atmoalter/siphs.dm
+   A /trunk/main-src/Code/Machinery/Computer/
+   A /trunk/main-src/Code/Machinery/Computer/_computer.dm
+   A /trunk/main-src/Code/Machinery/Computer/airtunnel.dm
+   A /trunk/main-src/Code/Machinery/Computer/atmosphere.dm
+   A /trunk/main-src/Code/Machinery/Computer/card.dm
+   A /trunk/main-src/Code/Machinery/Computer/communications.dm
+   A /trunk/main-src/Code/Machinery/Computer/data.dm
+   A /trunk/main-src/Code/Machinery/Computer/engine.dm
+   A /trunk/main-src/Code/Machinery/Computer/hologram.dm
+   A /trunk/main-src/Code/Machinery/Computer/med_data.dm
+   A /trunk/main-src/Code/Machinery/Computer/pod.dm
+   A /trunk/main-src/Code/Machinery/Computer/prision_shuttle.dm
+   A /trunk/main-src/Code/Machinery/Computer/secure_data.dm
+   A /trunk/main-src/Code/Machinery/Computer/shuttle.dm
+   A /trunk/main-src/Code/Machinery/Computer/sleeper.dm
+   A /trunk/main-src/Code/Machinery/cryocell.dm
+   A /trunk/main-src/Code/Machinery/freezer.dm
+   A /trunk/main-src/Code/Machinery/nuclearbomb.dm
+   A /trunk/main-src/Code/Machinery/pod.dm
+   A /trunk/main-src/Code/Machinery/recon.dm
+   A /trunk/main-src/Code/Machinery/shuttle.dm
+   A /trunk/main-src/Code/Machinery/sleeper.dm
+   M /trunk/main-src/Code/airtunnel.dm
+   M /trunk/main-src/Code/computer.dm
+   M /trunk/main-src/Code/cryo.dm
+   M /trunk/main-src/Code/demo.dm
+   M /trunk/main-src/Code/engine.dm
+   M /trunk/main-src/Code/globals.dm
+   M /trunk/main-src/Code/instructions.dm
+   M /trunk/main-src/Code/shuttle.dm
+   M /trunk/main-src/Code/weap_sat.dm
+   M /trunk/main-src/Code/weapons.dm
+   D /trunk/main-src/Code/atmo_control.dm
+   D /trunk/main-src/Code/demo2.dm
+   M /trunk/main-src/Icons/Icons.dmi
+   M /trunk/main-src/spacestation13.dme

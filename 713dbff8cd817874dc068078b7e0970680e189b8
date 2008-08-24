@@ -1,0 +1,10 @@
+svn-revision: 55
+svn-path: /branches/1.0-rc-1
+svn-author: stephen001
+svn-date: 2008-06-17T22:45:05.106023Z
+changed-paths:
+   M /branches/1.0-rc-1/Code/globals.dm
+   A /branches/1.0-rc-1/changelog.txt
+   M /branches/1.0-rc-1/spacestation13.dme
+   D /branches/1.0-rc-1/_changes.dm
+   D /branches/1.0-rc-1/_design.dm

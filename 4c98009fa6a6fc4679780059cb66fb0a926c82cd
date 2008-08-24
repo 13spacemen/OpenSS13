@@ -1,0 +1,7 @@
+svn-revision: 117
+svn-path: /branches/1.0+p
+svn-author: hobnob13
+svn-date: 2008-08-19T22:24:28.732112Z
+changed-paths:
+   A /branches/1.0+p/ (from /trunk:116)
+svn-deleted: /branches/1.0+p was deleted in r120 by hobnob13 on 2008-08-21T05:41:29.216354Z: 'Remove unneeded branch'

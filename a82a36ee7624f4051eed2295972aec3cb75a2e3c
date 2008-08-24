@@ -1,0 +1,10 @@
+svn-revision: 37
+svn-path: /
+svn-author: shadowlord13
+svn-date: 2008-06-06T18:42:57.393466Z
+changed-paths:
+   A /trunk/Icons/drone.dmi
+   M /trunk/Icons/screen.dmi
+   M /trunk/Icons/screen1.dmi
+node-properties (as set in this revision):
+   /trunk/Icons/drone.dmi: svn:mime-type='application/octet-stream'
