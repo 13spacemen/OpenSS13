@@ -592,7 +592,7 @@
 	if (src.opened)
 		if (istype(W, /obj/item/weapon/grab))
 			src.MouseDrop_T(W:affecting, user)	//act like they were dragged onto the closet
-		else:
+		else
 			user.drop_item()
 			W.loc = src.loc
 	else
@@ -797,7 +797,7 @@
 	if (src.opened)
 		if (istype(W, /obj/item/weapon/grab))
 			src.MouseDrop_T(W:affecting, user)	//act like they were dragged onto the closet
-		else:
+		else
 			user.drop_item()
 			W.loc = src.loc
 	else
@@ -1295,7 +1295,7 @@
 	if ((src.opened || W.damtype != "fire" || !( istype(W, /obj/item/weapon/weldingtool))))
 		if (istype(W, /obj/item/weapon/grab))
 			src.MouseDrop_T(W:affecting, user)	//act like they were dragged onto the closet
-		else:
+		else
 			user.drop_item()
 			W.loc = src.loc
 	else
