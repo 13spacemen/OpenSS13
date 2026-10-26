@@ -235,7 +235,7 @@
 /obj/proc/hide(h)
 	return
 
-/obj/item/weapon/grab/proc/throw()
+/obj/item/weapon/grab/proc/toss()
 
 	if(src.affecting)
 		src.affecting.density = 1
@@ -4875,7 +4875,7 @@
 			return
 		W.loc = src.loc
 		if (istype(W, /obj/item/weapon/grab))
-			W:throw()
+			W:toss()
 		else
 			W.dropped(src)
 		if (W)
