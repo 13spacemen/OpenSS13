@@ -594,7 +594,7 @@
 	if (src.opened)
 		if (istype(W, /obj/item/weapon/grab))
 			src.MouseDrop_T(W:affecting, user)	//act like they were dragged onto the closet
-		else:
+		else
 			if (user.can_drop())
 				user.drop_item()
 				W.loc = src.loc
@@ -792,7 +792,7 @@
 	if (src.opened)
 		if (istype(W, /obj/item/weapon/grab))
 			src.MouseDrop_T(W:affecting, user)	//act like they were dragged onto the closet
-		else:
+		else
 			if (user.can_drop())
 				user.drop_item()
 				W.loc = src.loc
