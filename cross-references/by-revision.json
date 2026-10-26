@@ -1,0 +1,826 @@
+{
+  "3": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 3
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "c3245b85dbb6377dcf3bb25790bb4c7ee447b17a"
+      },
+      {
+        "svn_path": "/",
+        "sha": "750ff62db23cfc7f8974d73bf3442b42162a1ac1"
+      }
+    ]
+  },
+  "4": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 5
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "b902cc91d72ce9a877c06091964c43e1123a4ddf"
+      },
+      {
+        "svn_path": "/",
+        "sha": "7fe286dacd7ed8997e71c47ed6c25c4269cc4cc1"
+      }
+    ]
+  },
+  "5": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 4
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 4
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "f5254ee9384f98caac7a8652a5190dc9e3d97318"
+      },
+      {
+        "svn_path": "/",
+        "sha": "e6fe6e98cf67a37c7c52107615476693c3aa69e8"
+      }
+    ]
+  },
+  "12": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 2
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "2ad01cf927954107d4b1adfc3027325fa742b7fd"
+      },
+      {
+        "svn_path": "/",
+        "sha": "705f70af76f437f9e4e15a1a7b637c8d851ab5ca"
+      }
+    ]
+  },
+  "17": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 9
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 9
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "31e25adfc51f8df7eb25bc19a09043220d4e9a74"
+      },
+      {
+        "svn_path": "/",
+        "sha": "e209026f9866fe3b786168018148076508bda7b4"
+      }
+    ]
+  },
+  "18": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 9
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 7
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "66ea0045fede6b79d69929c5b90c9e2bfba3ab41"
+      },
+      {
+        "svn_path": "/",
+        "sha": "8f6357c79430b8e1a212691256e2411226d26fd0"
+      }
+    ]
+  },
+  "20": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 10
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 10
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "78f34b16e5cd63988fad26134a56e3702732c3ff"
+      },
+      {
+        "svn_path": "/",
+        "sha": "6660d804aaca2296b9dc7e3ef8d730e3ce7f5fa6"
+      }
+    ]
+  },
+  "28": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 11
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "7cb27a76b7b096f6fb69a2ba4df9d05f369a5a64"
+      },
+      {
+        "svn_path": "/",
+        "sha": "22ed85e481b4f205f10a9a25dcfbe8f7c9135055"
+      }
+    ]
+  },
+  "38": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "51bcf70f4ac207a609d7b30ff29c2eaad5c84518"
+      },
+      {
+        "svn_path": "/",
+        "sha": "b27d12cb389d53f93a91d715b389c1868d706c7a"
+      }
+    ]
+  },
+  "43": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 18
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 18
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "89f4a160d1a5d37627200951090aa3dcdce67cdf"
+      },
+      {
+        "svn_path": "/",
+        "sha": "3b145b6e87f7dc0236bb94cf8e1ef5c401a4b061"
+      }
+    ]
+  },
+  "44": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 19
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 19
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "1a8b49f89f014b359c8cf7fb3630ad0c823fa4a5"
+      },
+      {
+        "svn_path": "/",
+        "sha": "9447afb3c51791dac399dcbb0b39a6d340c47b2c"
+      }
+    ]
+  },
+  "48": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 22
+      },
+      {
+        "tracker": "bugs",
+        "number": 23
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 22
+      },
+      {
+        "tracker": "bugs",
+        "number": 23
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "757dd2a49cbc48ee787909947c7271d20774b5a3"
+      },
+      {
+        "svn_path": "/",
+        "sha": "4fa51e0369bf4d0af774ee995408e30707e5bcfe"
+      }
+    ]
+  },
+  "51": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "d7860fa4730d7f70791ce6ffa55f2b5724e5f1a1"
+      },
+      {
+        "svn_path": "/",
+        "sha": "e45e7b4ed6f0aaadedc1aa9a9162cc07f4c916ba"
+      }
+    ]
+  },
+  "52": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 17
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "1a35995cb996d034bfeeea371fbe60cafbf7c139"
+      },
+      {
+        "svn_path": "/",
+        "sha": "1d67242c074857d33d0d2ba954c5d35878bdb757"
+      }
+    ]
+  },
+  "53": {
+    "cites": [],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 20
+      },
+      {
+        "tracker": "bugs",
+        "number": 21
+      },
+      {
+        "tracker": "bugs",
+        "number": 26
+      },
+      {
+        "tracker": "bugs",
+        "number": 27
+      },
+      {
+        "tracker": "bugs",
+        "number": 28
+      },
+      {
+        "tracker": "bugs",
+        "number": 30
+      },
+      {
+        "tracker": "bugs",
+        "number": 31
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "a91d1bcf1c922a47c683a972653e0deb2e58ead8"
+      },
+      {
+        "svn_path": "/",
+        "sha": "2eba6e40d0f966f9d8c46c1b0a190473a3019f28"
+      }
+    ]
+  },
+  "57": {
+    "cites": [],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 35
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "2324df01f3cc3c9ecd4ae4b3a20ffc9196d4007f"
+      },
+      {
+        "svn_path": "/",
+        "sha": "06f3d41deeb2c4d383bb6421079e80d7bb9a523c"
+      }
+    ]
+  },
+  "63": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 35
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 35
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "fd5399aecfe0fac99c0b8c9c61d8ed4eca614c32"
+      },
+      {
+        "svn_path": "/trunk",
+        "sha": "830c94694e0165e3786e92bb57aab82fa353aa03"
+      },
+      {
+        "svn_path": "/",
+        "sha": "256bdb7dd69b1f91f8ec7601685f02e324e08601"
+      }
+    ]
+  },
+  "64": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 7
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 7
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "838c862352385a254c5fe1fdafaf576b1900a7a0"
+      },
+      {
+        "svn_path": "/trunk",
+        "sha": "47f8dae0917754a870a458d8e32c055319126281"
+      },
+      {
+        "svn_path": "/",
+        "sha": "0fca28ca9eea4d85f4a247d9d3f93af6df48f712"
+      }
+    ]
+  },
+  "67": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 7
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-1",
+        "sha": "c400b6b419e9507dc66a5082bebd81671158e974"
+      },
+      {
+        "svn_path": "/trunk",
+        "sha": "41057541f6dca9c80c2440a20b0a00c2a6f75006"
+      },
+      {
+        "svn_path": "/",
+        "sha": "f52b2e167c1f16453332b154f5a1f8bef7f1b776"
+      }
+    ]
+  },
+  "80": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 13
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 13
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "f421fd2dc7ee059237181d0fa12fad5442d05c99"
+      },
+      {
+        "svn_path": "/trunk",
+        "sha": "feedfc9af83da624c40c79fe71f333828252697f"
+      },
+      {
+        "svn_path": "/",
+        "sha": "ccd791b4c57b1ac14daff3eeded6d8f8db3118db"
+      }
+    ]
+  },
+  "81": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 13
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "9761a83acc759af0c21c342c0ec94260545ac212"
+      },
+      {
+        "svn_path": "/",
+        "sha": "090bf5f8e04a154d7f15a92d989b8f5b8bfc73d3"
+      }
+    ]
+  },
+  "82": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 41
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "aa99bcf75c061d6e023f62709c54141592c52cc9"
+      },
+      {
+        "svn_path": "/",
+        "sha": "c6277a3e511c0ed34c3f4b1ce9f2feb6e51816f4"
+      }
+    ]
+  },
+  "83": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 13
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 41
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "b8efabe42fc3f5719d2ab886e572e23535695a12"
+      },
+      {
+        "svn_path": "/",
+        "sha": "55b393efb1267e429d5e63061493815c561639aa"
+      }
+    ]
+  },
+  "85": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 24
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 24
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "f7f83051dfae1f22ce03903a3a674118fc6bb5b7"
+      },
+      {
+        "svn_path": "/",
+        "sha": "76811327f056f9852e65523b92208f044e00dfb3"
+      }
+    ]
+  },
+  "87": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 46
+      }
+    ],
+    "mentioned_in": [],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "f5e00da5c6e74ce4868060731d25d97106074662"
+      },
+      {
+        "svn_path": "/",
+        "sha": "519a576512cc1c5ad606bea21b6fe75a38f73519"
+      }
+    ]
+  },
+  "88": {
+    "cites": [],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 46
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "ed78c8634688256834e8489704a04b2c70aca33b"
+      },
+      {
+        "svn_path": "/",
+        "sha": "6b754b9fc3bf044f1e9cf407ff3f6f52605d982c"
+      }
+    ]
+  },
+  "89": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 45
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 45
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "334e1c78a43f919cc617d6e266f13beb8d979196"
+      },
+      {
+        "svn_path": "/",
+        "sha": "e0ccb2649c99b678c431be34b270a651f27df0ee"
+      }
+    ]
+  },
+  "90": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 44
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 44
+      },
+      {
+        "tracker": "bugs",
+        "number": 47
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "4993557aa3f4ae5ec068b48ff2776e8c6bd9befb"
+      },
+      {
+        "svn_path": "/",
+        "sha": "b62740add002737327b838374f9f63444d62380e"
+      }
+    ]
+  },
+  "91": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 48
+      },
+      {
+        "tracker": "bugs",
+        "number": 49
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 48
+      },
+      {
+        "tracker": "bugs",
+        "number": 49
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "7524a4d9c3cceddc39157005045778af608666b0"
+      },
+      {
+        "svn_path": "/",
+        "sha": "08742186bda925ca56ab9536d693a4e909ccb50d"
+      }
+    ]
+  },
+  "92": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 43
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 43
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "9935cef69805bc3fe2beceb9676f2e53c0e4632e"
+      },
+      {
+        "svn_path": "/",
+        "sha": "48f2e933324e981daa96dd9523af08ef663f76ba"
+      }
+    ]
+  },
+  "93": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 15
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 15
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "32b24ffb62780e7e1329fe0fe0ab301445ce2c49"
+      },
+      {
+        "svn_path": "/",
+        "sha": "4b01c3ef44616debf0c8a486ce7437d767804494"
+      }
+    ]
+  },
+  "94": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 42
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 42
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "66c3bb76e7530b357624081b6e30bcb0f9895d2c"
+      },
+      {
+        "svn_path": "/",
+        "sha": "77e8e6a1498e0644a7e28fffb4e112110f813af5"
+      }
+    ]
+  },
+  "95": {
+    "cites": [
+      {
+        "tracker": "bugs",
+        "number": 16
+      }
+    ],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 16
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/branches/1.0-rc-2",
+        "sha": "9a47ad3950e74905a35c1c644aff0b3c39870738"
+      },
+      {
+        "svn_path": "/",
+        "sha": "b12c176b325ae7f7de42da053ccbd1632558dbfb"
+      }
+    ]
+  },
+  "106": {
+    "cites": [],
+    "mentioned_in": [
+      {
+        "tracker": "bugs",
+        "number": 51
+      },
+      {
+        "tracker": "bugs",
+        "number": 52
+      },
+      {
+        "tracker": "bugs",
+        "number": 53
+      }
+    ],
+    "git_commits": [
+      {
+        "svn_path": "/trunk",
+        "sha": "7ed0e07d46b1043c3e8c917425b88dad4fc3fea2"
+      },
+      {
+        "svn_path": "/",
+        "sha": "7f6da780639dc89e966fb69d2e21aad75a0f5b17"
+      }
+    ]
+  }
+}

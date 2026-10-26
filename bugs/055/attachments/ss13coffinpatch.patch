@@ -1,0 +1,84 @@
+Index: Code/!atoms.dm
+===================================================================
+--- Code/!atoms.dm	(revision 122)
++++ Code/!atoms.dm	(working copy)
+@@ -545,6 +545,12 @@
+ 	var/welded = 0.0
+ 	flags = 320.0
+ 	weight = 1.0E8
++/obj/closet/coffin
++	desc = "It's a coffin."
++	name = "Coffin"
++	icon_state="coffin"
++	original="coffin"
++	orig_closed = "coffino"
+ /obj/closet/emcloset
+ 	desc = "A bulky (yet mobile) closet. Comes prestocked with a gasmask and o2 tank for emergencies."
+ 	name = "Emergency Closets"
+Index: Code/demo.dm
+===================================================================
+--- Code/demo.dm	(revision 122)
++++ Code/demo.dm	(working copy)
+@@ -1262,7 +1262,7 @@
+ 				if (client.eye == src)
+ 					client.eye = client.mob
+ 					client.perspective = MOB_PERSPECTIVE
+-		src.icon_state = "emcloset1"
++		src.icon_state = orig_closed
+ 		del(src)
+ 		return
+ 	return
+@@ -1299,7 +1299,7 @@
+ 				if (client.eye == src)
+ 					client.eye = client.mob
+ 					client.perspective = MOB_PERSPECTIVE
+-		src.icon_state = "emcloset1"
++		src.icon_state = orig_closed
+ 		src.opened = 1
+ 	else
+ 		user.client_mob() << "\blue It's welded shut!"
+@@ -1351,7 +1351,7 @@
+ 						if (client.eye == src)
+ 							client.eye = client.mob
+ 							client.perspective = MOB_PERSPECTIVE
+-			src.icon_state = "emcloset1"
++			src.icon_state = orig_closed
+ 			src.opened = 1
+ 		else
+ 			usr.client_mob() << "\blue It's welded shut!"
+Index: Icons/stationobjs.dmi
+===================================================================
+Cannot display: file marked as a binary type.
+svn:mime-type = application/octet-stream
+Index: spacestation13.dme
+===================================================================
+--- spacestation13.dme	(revision 122)
++++ spacestation13.dme	(working copy)
+@@ -3,12 +3,6 @@
+ // New source code should be placed in .dm files: choose File/New --> Code File.
+ 
+ // BEGIN_INTERNALS
+-/*
+-FILE: Code\Item\Weapon\weldingtool.dm
+-DIR: Code Code\Item Code\Item\Weapon
+-MAP_ICON_TYPE: 0
+-AUTO_FILE_DIR: ON
+-*/
+ // END_INTERNALS
+ // BEGIN_FILE_DIR
+ #define FILE_DIR .
+Index: ss13h_new.dmp
+===================================================================
+--- ss13h_new.dmp	(revision 122)
++++ ss13h_new.dmp	(working copy)
+@@ -778,8 +778,8 @@
+ "aoX" = (/obj/item/weapon/sheet/metal{amount = 50},/obj/item/weapon/handcuffs,/obj/item/weapon/clothing/mask/muzzle,/obj/item/weapon/timer,/obj/item/weapon/radio/signaler,/obj/item/weapon/radio/signaler,/turf/station/floor,/area/toolstorage)
+ "aoY" = (/obj/item/weapon/sheet/metal{amount = 50},/obj/item/weapon/storage/toolbox/electrical,/turf/station/floor,/area/toolstorage)
+ "aoZ" = (/obj/machinery/camera{dir = 8; c_tag = "Autolathe"},/obj/item/weapon/sheet/metal{amount = 50},/turf/station/floor,/area/toolstorage)
+-"apa" = (/obj/closet{name = "coffin"},/turf/station/floor,/area/chapel)
+-"apb" = (/obj/machinery/atmoalter/siphs/scrubbers/air_filter,/obj/closet{name = "coffin"},/turf/station/floor,/area/chapel)
++"apa" = (/obj/closet/coffin,/turf/station/floor,/area/chapel)
++"apb" = (/obj/machinery/atmoalter/siphs/scrubbers/air_filter,/obj/closet/coffin,/turf/station/floor,/area/chapel)
+ "apc" = (/obj/machinery/light_switch{pixel_x = 0; pixel_y = 24},/turf/station/floor,/area/chapel)
+ "apd" = (/turf/station/floor,/area/chapel)
+ "ape" = (/obj/machinery/atmoalter/siphs/scrubbers/air_filter,/obj/landmark/alterations{name = "blobstart"; icon_state = "x3"},/turf/station/floor,/area/chapel)

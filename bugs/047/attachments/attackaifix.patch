@@ -1,0 +1,813 @@
+Index: trunk/Code/items.dm
+===================================================================
+--- trunk/Code/items.dm	(revision 90)
++++ trunk/Code/items.dm	(working copy)
+@@ -884,7 +884,7 @@
+ 		if (!( safety ))
+ 			M.weakened = 10
+ 			if (M.hasClient())
+-				var/mob/CM = M.client_mob()
++				var/mob/CM = M.client_mob()
+ 				if (!( safety ))
+ 					if ((M.eye_stat > 15 && prob(M.eye_stat + 50)))
+ 						flick("e_flash", CM.flash)
+@@ -928,7 +928,7 @@
+ 							S.active = 0
+ 							S.icon_state = "shield0"
+ 				if (M.hasClient())
+-					var/mob/CM = M.client_mob()
++					var/mob/CM = M.client_mob()
+ 					var/safety = null
+ 					if (istype(M, /mob/human))
+ 						var/mob/human/H = M
+@@ -3095,8 +3095,8 @@
+ 		// Not checked: r_epil, r_ch_cou, r_tourette
+ 
+ 		if (!M.hasClient())
+-			user.show_message("\blue [M] has a vacant look in \his eyes.", 1)
+-		else if (M.currentDrone!=null)
++			user.show_message("\blue [M] has a vacant look in \his eyes.", 1)
++		else if (M.currentDrone!=null)
+ 			user.show_message("\blue [M] does not appear to notice you.", 1)
+ 	else
+ 		user.client_mob() << "You can't get any meaningful results about [M] from the analyzer."
+@@ -3173,38 +3173,38 @@
+ 	return
+ 
+ /obj/item/weapon/storage/proc/show_to(mob/user)
+-	var/screen
+-	if (user.client)
+-		screen = user.client.screen
+-	else if (user.currentDrone!=null)
+-		var/client/client = user.alwaysClient()
+-		if (client)
++	var/screen
++	if (user.client)
++		screen = user.client.screen
++	else if (user.currentDrone!=null)
++		var/client/client = user.alwaysClient()
++		if (client)
+ 			screen = client.screenOrBackup()
+-		else
+-			return
+-	else
+-		return
++		else
++			return
++	else
++		return
+ 	screen -= src.boxes
+ 	screen -= src.closer
+ 	screen -= src.contents
+ 	screen += src.boxes
+ 	screen += src.closer
+-	screen += src.contents
+-	
++	screen += src.contents
++
+ 	user.s_active = src
+ 	return
+ 
+ /obj/item/weapon/storage/proc/hide_from(mob/user)
+-	var/screen
+-	if (user.client)
+-		screen = user.client.screen
+-	else if (user.currentDrone!=null)
+-		var/client/client = user.alwaysClient()
+-		if (client)
+-			screen = client.screenOrBackup()
+-		else
+-			return
+-	else
++	var/screen
++	if (user.client)
++		screen = user.client.screen
++	else if (user.currentDrone!=null)
++		var/client/client = user.alwaysClient()
++		if (client)
++			screen = client.screenOrBackup()
++		else
++			return
++	else
+ 		return
+ 	screen -= src.boxes
+ 	screen -= src.closer
+@@ -3696,7 +3696,7 @@
+ 
+ /obj/item/weapon/igniter/attackby(obj/item/weapon/W, mob/user)
+ 
+-	var/client/client = user.alwaysClient()
++	var/client/client = user.alwaysClient()
+ 	if ((istype(W, /obj/item/weapon/radio/signaler) && !( src.status )))
+ 		var/obj/item/weapon/radio/signaler/S = W
+ 		if (!( S.b_stat ))
+@@ -3704,14 +3704,14 @@
+ 		var/obj/item/weapon/assembly/rad_ignite/R = new /obj/item/weapon/assembly/rad_ignite( user )
+ 		S.loc = R
+ 		R.part1 = S
+-		S.layer = initial(S.layer)
+-		if (client)
+-			client.screenOrBackupRemove(S)
+-			client.screen -= S
+-		if (istype(user, /mob/drone))
+-			if (user.equipped() == S)
+-				user.u_equip(S)
+-				user:grip(R)
++		S.layer = initial(S.layer)
++		if (client)
++			client.screenOrBackupRemove(S)
++			client.screen -= S
++		if (istype(user, /mob/drone))
++			if (user.equipped() == S)
++				user.u_equip(S)
++				user:grip(R)
+ 		else if (user.r_hand == S)
+ 			user.u_equip(S)
+ 			user.r_hand = R
+@@ -3722,9 +3722,9 @@
+ 		src.master = R
+ 		src.layer = initial(src.layer)
+ 		user.u_equip(src)
+-		if (client)
+-			client.screenOrBackupRemove(src)
+-			client.screen -= src
++		if (client)
++			client.screenOrBackupRemove(src)
++			client.screen -= src
+ 		src.loc = R
+ 		R.part2 = src
+ 		R.layer = 20
+@@ -3737,13 +3737,13 @@
+ 		W.loc = R
+ 		R.part1 = W
+ 		W.layer = initial(W.layer)
+-		if (client)
+-			client.screenOrBackupRemove(W)
+-			client.screen -= W
+-		if (istype(user, /mob/drone))
+-			if (user.equipped() == W)
+-				user.u_equip(W)
+-				user:grip(R)
++		if (client)
++			client.screenOrBackupRemove(W)
++			client.screen -= W
++		if (istype(user, /mob/drone))
++			if (user.equipped() == W)
++				user.u_equip(W)
++				user:grip(R)
+ 		else if (user.r_hand == W)
+ 			user.u_equip(W)
+ 			user.r_hand = R
+@@ -3754,9 +3754,9 @@
+ 		src.master = R
+ 		src.layer = initial(src.layer)
+ 		user.u_equip(src)
+-		if (client)
+-			client.screenOrBackupRemove(src)
+-			client.screen -= src
++		if (client)
++			client.screenOrBackupRemove(src)
++			client.screen -= src
+ 		src.loc = R
+ 		R.part2 = src
+ 		R.layer = 20
+@@ -3769,13 +3769,13 @@
+ 		W.loc = R
+ 		R.part1 = W
+ 		W.layer = initial(W.layer)
+-		if (client)
+-			client.screenOrBackupRemove(W)
+-			client.screen -= W
+-		if (istype(user, /mob/drone))
+-			if (user.equipped() == W)
+-				user.u_equip(W)
+-				user:grip(R)
++		if (client)
++			client.screenOrBackupRemove(W)
++			client.screen -= W
++		if (istype(user, /mob/drone))
++			if (user.equipped() == W)
++				user.u_equip(W)
++				user:grip(R)
+ 		else if (user.r_hand == W)
+ 			user.u_equip(W)
+ 			user.r_hand = R
+@@ -3786,9 +3786,9 @@
+ 		src.master = R
+ 		src.layer = initial(src.layer)
+ 		user.u_equip(src)
+-		if (client)
+-			client.screenOrBackupRemove(src)
+-			client.screen -= src
++		if (client)
++			client.screenOrBackupRemove(src)
++			client.screen -= src
+ 		src.loc = R
+ 		R.part2 = src
+ 		R.layer = 20
+@@ -3869,7 +3869,7 @@
+ 
+ /obj/item/weapon/radio/electropack/attackby(obj/item/weapon/W, mob/user)
+ 
+-	var/client/client = user.alwaysClient()
++	var/client/client = user.alwaysClient()
+ 	if (istype(W, /obj/item/weapon/screwdriver))
+ 		src.e_pads = !( src.e_pads )
+ 		if (src.e_pads)
+@@ -3883,13 +3883,13 @@
+ 			W.loc = A
+ 			A.part1 = W
+ 			W.layer = initial(W.layer)
+-			if (client)
+-				client.screenOrBackupRemove(W)
+-				client.screen -= W
+-			if (istype(user, /mob/drone))
+-				if (user.equipped() == W)
+-					user.u_equip(W)
+-					user:grip(A)
++			if (client)
++				client.screenOrBackupRemove(W)
++				client.screen -= W
++			if (istype(user, /mob/drone))
++				if (user.equipped() == W)
++					user.u_equip(W)
++					user:grip(A)
+ 			else if (user.r_hand == W)
+ 				user.u_equip(W)
+ 				user.r_hand = A
+@@ -3900,9 +3900,9 @@
+ 			src.master = A
+ 			src.layer = initial(src.layer)
+ 			user.u_equip(src)
+-			if (client)
+-				client.screenOrBackupRemove(src)
+-				client.screen -= src
++			if (client)
++				client.screenOrBackupRemove(src)
++				client.screen -= src
+ 			src.loc = A
+ 			A.part2 = src
+ 			A.layer = 20
+@@ -4355,43 +4355,43 @@
+ 		//Foreach goto(203)
+ 	for(var/mob/O in crackle)
+ 		O.show_message(text("\icon[] <I>Crackle,Crackle</I>", src), 2)
+-		//Foreach goto(233)
++		//Foreach goto(233)
+ 	var/speakerType = M.type
+ 	if (istype(M, /mob/human) || (istype(M, /mob/ai)))
+ 		for(var/mob/O in receive)
+-			var/mobType = O.type
+-			if (istype(O, /mob/drone))
+-				var/mob/drone/Mdrone = O
+-				var/mob/Mowner = Mdrone.controlledBy
+-				if (Mowner!=null)
+-					mobType = Mowner.type
+-			if (istype(O, /mob/human) || (istype(O, /mob/ai)) || (istype(O, /mob/drone) && mobType==speakerType))
++			var/mobType = O.type
++			if (istype(O, /mob/drone))
++				var/mob/drone/Mdrone = O
++				var/mob/Mowner = Mdrone.controlledBy
++				if (Mowner!=null)
++					mobType = Mowner.type
++			if (istype(O, /mob/human) || (istype(O, /mob/ai)) || (istype(O, /mob/drone) && mobType==speakerType))
+ 				O.show_message(text("<B>[]-\icon[]\[[]\]-broadcasts</B>: <I>[]</I>", M.rname, src, src.freq, msg), 2)
+ 			else
+ 				O.show_message(text("<B>[]-\icon[]\[[]\]-broadcasts</B>: <I>[]</I>", M.rname, src, src.freq, stars(msg)), 2)
+ 			//Foreach goto(284)
+ 		if (src.freq == 5)
+ 			for(var/mob/O in receive)
+-				var/mobType = O.type
+-				if (istype(O, /mob/drone))
+-					var/mob/drone/Mdrone = O
+-					var/mob/Mowner = Mdrone.controlledBy
+-					if (Mowner!=null)
+-						mobType = Mowner.type
+-				if (istype(O, /mob/human) || (istype(O, /mob/ai)) || (istype(O, /mob/drone) && istype(mobType, speakerType)))
++				var/mobType = O.type
++				if (istype(O, /mob/drone))
++					var/mob/drone/Mdrone = O
++					var/mob/Mowner = Mdrone.controlledBy
++					if (Mowner!=null)
++						mobType = Mowner.type
++				if (istype(O, /mob/human) || (istype(O, /mob/ai)) || (istype(O, /mob/drone) && istype(mobType, speakerType)))
+ 					O.show_message(text("<B>[]-\icon[]\[[]\]-broadcasts (over PA)</B>: <I>[]</I>", M.rname, src, src.freq, msg), 2)
+ 				else
+ 					O.show_message(text("<B>[]-\icon[]\[[]\]-broadcasts (over PA)</B>: <I>[]</I>", M.rname, src, src.freq, stars(msg)), 2)
+ 				//Foreach goto(393)
+ 	else
+ 		for(var/mob/O in receive)
+-			var/mobType = O.type
+-			if (istype(O, /mob/drone))
+-				var/mob/drone/Mdrone = O
+-				var/mob/Mowner = Mdrone.controlledBy
+-				if (Mowner!=null)
+-					mobType = Mowner.type
+-			if (istype(O, M) || (istype(O, /mob/drone) && istype(mobType, speakerType)))
++			var/mobType = O.type
++			if (istype(O, /mob/drone))
++				var/mob/drone/Mdrone = O
++				var/mob/Mowner = Mdrone.controlledBy
++				if (Mowner!=null)
++					mobType = Mowner.type
++			if (istype(O, M) || (istype(O, /mob/drone) && istype(mobType, speakerType)))
+ 				O.show_message(text("<B>The monkey-\icon[]\[[]\]-broadcasts</B>: <I>[]</I>", src, src.freq, msg), 2)
+ 			else
+ 				O.show_message(text("<B>The monkey-\icon[]\[[]\]-broadcasts</B>: chimpering", src, src.freq), 2)
+@@ -5604,184 +5604,184 @@
+ 		return
+ 	..()
+ 	return
+-
+-/*
+-	Proc name: canReach
+-	Purpose: To indicate whether something - a turf, a mob, an object, whatever - can be reached from the user's location.
+-	Parameters:
+-		user - the mob who will be doing the attempted touching
+-		usingWeapon - the weapon the mob is using to reach src. This is important if they're actually trying to *shoot* someone.
+-		ignoreNextMoveTime - Normally this would be 0, and if world.time wasn't < next_time, the proc would return 0. If it was < next_time, prev_time and next_time would be changed (next_time being set to world.time + 10).
+-			If, instead, ignoreNextMoveTime is 1, next_time, world.time, and prev_time will not be examined or changed.
+-	
+-	Return value:
+-		This returns 0 if, for some reason, the user can't reach src. If not, the return value is a set of 3 bitflags:
+-		1: CANREACH_USINGWEAPON: If set, user is using a "weapon" (passed in as usingWeapon) on src. (This is kind of semi-useless to check, since the only case currently where this would be 0 when you had passed in a weapon would be if the user was a drone, and the weapon was the AI interface, and the drone was controlled by the AI player, in which case if you cared you would already be checking for it anyways because you would need to be changing the user and setting the weapon to null yourself.)
+-		2: CANREACH_CANTOUCH: If set, src can be touched by user (which was called t5 in DblClick). This is set if (get_dist(src, user) <= 1 || src.loc == user), or if the user is the AI, or if the user is a drone controlled by an AI using the AI interface tool.
+-		4: CANREACH_ALLOWED: If set, src is reachable by user, or the attempt is allowed for another reason. This is always set if the return value is valid. This differs from cantouch because this will be set if the user is using a gun on someone distant, whereas cantouch will not be set in that case. It's also theoretically possible to have a return value which contains only 4 for some /obj/screen objects, if the code in /atom/DblClick wasn't just overly paranoid.
+-		
+-		Valid combinations of those are: 0, 4, 5, 6, or 7. (You won't ever have 1 or 2 set if 4 isn't set)
+-	
+-	Detail on what's checked:
+-		The user has to be able to move unless they are an AI, and their stat has to be 0 (alive and awake).
+-		If the src is not in user's inventory, we MIGHT return 0:
+-			If src is not a turf, and it is not on a turf, and it is inside something else which is not in a turf:
+-				We return 0, it cannot be reached.
+-			If not, if the user is inside some item instead of on a turf, and src is not in the same place as the user, and src is not a screen object, and src is not inside an item in user's inventory:
+-				We return 0, it cannot be reached.
+-			(Otherwise we continue)
+-		And some other difficult to explain stuff is done here.
+-	
+-		Either CANREACH_CANTOUCH will be true, or the user must be using a weapon which has flag 16 set, or src is an /obj/screen.
+-		Checks to determine if there are obstacles in the way (windows, etc) are done unless src is an /obj/screen.
+-*/
+-
+-#define CANREACH_USINGWEAPON 1
+-#define CANREACH_CANTOUCH 2
+-#define CANREACH_ALLOWED 4
+-
+-/* Note: CANREACH_USINGWEAPON and CANREACH_CANTOUCH are not referenced in canReach because those are set by just a something&1 and a (something&1)<<1 */
+-
+-/atom/proc/canReach(mob/user, obj/item/weapon/usingWeapon, ignoreNextMoveTime)
+-	if (((!user.canmove) && (!istype(user, /mob/ai))) || user.stat != 0)
+-		return 0
+-	/* This line broke my mental parser. --Stephen001 */
+-	if ((!(src in user.contents) && (((!(isturf(src)) && (!(isturf(src.loc)) && (src.loc && !(isturf(src.loc.loc))))) || !(isturf(user.loc))) && (src.loc != user.loc && (!(istype(src, /obj/screen)) && !(user.contents.Find(src.loc)))))))
+-		return 0
+-	/* Breaks double-clicking on an equipment slot to place an item there, unfortunately. */
+-	/*
+-	//If the dclicked item is not in our inventory
+-	if (!(src in user.contents))
+-		//If the item is not a turf, and it is not on a turf, and it is inside something else which is not in a turf
+-		if (!(isturf(src)) && (!(isturf(src.loc)) && (src.loc && !(isturf(src.loc.loc)))))
+-			return
+-		//If not, if we are inside some item instead of on a turf, and the dclicked item is not in the same place as us, and the dclicked item is not a screen object, and the dclicked item is not inside an item in our inventory.
+-		else if	((!(isturf(user.loc))) && (src.loc != user.loc && (!(istype(src, /obj/screen)) && !(user.contents.Find(src.loc)))))
+-			return
+-	*/
+-
+-	/* That's checking to see if it's being held/worn or something like that, methinks */
+-	var/t5 = (get_dist(src, user) <= 1 || src.loc == user)
+-	if (istype(user, /mob/ai))
+-		t5 = 1
+-	else if (istype(user, /mob/drone))
+-		if (user:selectedTool == user:aiInterface)
+-			if (istype(user:controlledBy, /mob/ai))
+-				t5 = 1
+-				user = user:controlledBy
+-				usingWeapon = null
+-
+-	if ((istype(src, /obj/item/weapon/organ) && src in user.contents))
+-		var/mob/human/H = user
+-		if (istype(user, /mob/human))
+-			if (!(src == H.l_store || src == H.r_store))
+-				return 0
+-		else
+-			return 0
+-	/* Suggested fix by shadowlord13 for Bug #1952091. --Stephen001 */
+-	var/turf/turfLoc = (istype(src, /turf) ? src : src.loc)
+-	
+-	/* Seems like a pretty important expression. Dare I fathom what it checks? --Stephen001 */
+-	/* flag 16 in this case apparently disables the distance check and the alternate 'is in contents' check in the var/t5 line.
+-		It's used on guns, for instance. --shadowlord13 */
+-	if (((t5 || (usingWeapon && (usingWeapon.flags & 16))) && !(istype(src, /obj/screen))))
+-		if (ignoreNextMoveTime==0)
+-			if (user.next_move < world.time)
+-				user.prev_move = user.next_move
+-				user.next_move = world.time + 10
+-			else
+-				return 0
+-		if ((turfLoc && (get_dist(src, user) < 2 || turfLoc == user.loc)))
+-			var/direct = get_dir(user, src)
+-			var/obj/item/weapon/dummy/D = new /obj/item/weapon/dummy(user.loc)
+-			var/ok = 0
+-			if ((direct - 1) & direct)
+-				var/turf/T
+-				switch(direct)
+-					if(5.0)
+-						T = get_step(user, NORTH)
+-						if (T.Enter(D, src))
+-							D.loc = T
+-							T = turfLoc
+-							if (T.Enter(D, src))
+-								ok = 1
+-						else
+-							T = get_step(user, EAST)
+-							if (T.Enter(D, src))
+-								D.loc = T
+-								T = turfLoc
+-								if (T.Enter(D, src))
+-									ok = 1
+-					if(6.0)
+-						T = get_step(user, SOUTH)
+-						if (T.Enter(D, src))
+-							D.loc = T
+-							T = turfLoc
+-							if (T.Enter(D, src))
+-								ok = 1
+-						else
+-							T = get_step(user, EAST)
+-							if (T.Enter(D, src))
+-								D.loc = T
+-								T = turfLoc
+-								if (T.Enter(D, src))
+-									ok = 1
+-					if(9.0)
+-						T = get_step(user, NORTH)
+-						if (T.Enter(D, src))
+-							D.loc = T
+-							T = turfLoc
+-							if (T.Enter(D, src))
+-								ok = 1
+-						else
+-							T = get_step(user, WEST)
+-							if (T.Enter(D, src))
+-								D.loc = T
+-								T = turfLoc
+-								if (T.Enter(D, src))
+-									ok = 1
+-					if(10.0)
+-						T = get_step(user, SOUTH)
+-						if (T.Enter(D, src))
+-							D.loc = T
+-							T = turfLoc
+-							if (T.Enter(D, src))
+-								ok = 1
+-						else
+-							T = get_step(user, WEST)
+-							if (T.Enter(D, src))
+-								D.loc = T
+-								T = turfLoc
+-								if (T.Enter(D, src))
+-									ok = 1
+-					else
+-			else
+-				if (turfLoc.Enter(D, src))
+-					ok = 1
+-				else
+-					if ((src.flags & 512 && get_dir(src, user) & src.dir))
+-						ok = 1
+-						if (user.loc != turfLoc)
+-							for(var/atom/A in user.loc)
+-								if ((!A.CheckExit(user, src.loc)) && A != user)
+-									ok = 0
+-			del(D)
+-			if (!(ok))
+-				return 0
+-		//user << "Debug message: usingWeapon [usingWeapon] t5 [t5] src [src] user [user]"
+-		
+-		return (((t5!=0)&1)<<1) | ((usingWeapon!=0)&1) | CANREACH_ALLOWED
+-	else
+-		if (istype(src, /obj/screen))
+-			if (ignoreNextMoveTime==0)
+-				if (user.next_move < world.time)
+-					user.prev_move = user.next_move
+-					user.next_move = world.time + 10
+-				else
+-					return 0
+-			return (((t5!=0)&1)<<1) | ((usingWeapon!=0)&1) | CANREACH_ALLOWED
+-	return 0
+ 
++/*
++	Proc name: canReach
++	Purpose: To indicate whether something - a turf, a mob, an object, whatever - can be reached from the user's location.
++	Parameters:
++		user - the mob who will be doing the attempted touching
++		usingWeapon - the weapon the mob is using to reach src. This is important if they're actually trying to *shoot* someone.
++		ignoreNextMoveTime - Normally this would be 0, and if world.time wasn't < next_time, the proc would return 0. If it was < next_time, prev_time and next_time would be changed (next_time being set to world.time + 10).
++			If, instead, ignoreNextMoveTime is 1, next_time, world.time, and prev_time will not be examined or changed.
++
++	Return value:
++		This returns 0 if, for some reason, the user can't reach src. If not, the return value is a set of 3 bitflags:
++		1: CANREACH_USINGWEAPON: If set, user is using a "weapon" (passed in as usingWeapon) on src. (This is kind of semi-useless to check, since the only case currently where this would be 0 when you had passed in a weapon would be if the user was a drone, and the weapon was the AI interface, and the drone was controlled by the AI player, in which case if you cared you would already be checking for it anyways because you would need to be changing the user and setting the weapon to null yourself.)
++		2: CANREACH_CANTOUCH: If set, src can be touched by user (which was called t5 in DblClick). This is set if (get_dist(src, user) <= 1 || src.loc == user), or if the user is the AI, or if the user is a drone controlled by an AI using the AI interface tool.
++		4: CANREACH_ALLOWED: If set, src is reachable by user, or the attempt is allowed for another reason. This is always set if the return value is valid. This differs from cantouch because this will be set if the user is using a gun on someone distant, whereas cantouch will not be set in that case. It's also theoretically possible to have a return value which contains only 4 for some /obj/screen objects, if the code in /atom/DblClick wasn't just overly paranoid.
++
++		Valid combinations of those are: 0, 4, 5, 6, or 7. (You won't ever have 1 or 2 set if 4 isn't set)
++
++	Detail on what's checked:
++		The user has to be able to move unless they are an AI, and their stat has to be 0 (alive and awake).
++		If the src is not in user's inventory, we MIGHT return 0:
++			If src is not a turf, and it is not on a turf, and it is inside something else which is not in a turf:
++				We return 0, it cannot be reached.
++			If not, if the user is inside some item instead of on a turf, and src is not in the same place as the user, and src is not a screen object, and src is not inside an item in user's inventory:
++				We return 0, it cannot be reached.
++			(Otherwise we continue)
++		And some other difficult to explain stuff is done here.
++
++		Either CANREACH_CANTOUCH will be true, or the user must be using a weapon which has flag 16 set, or src is an /obj/screen.
++		Checks to determine if there are obstacles in the way (windows, etc) are done unless src is an /obj/screen.
++*/
++
++#define CANREACH_USINGWEAPON 1
++#define CANREACH_CANTOUCH 2
++#define CANREACH_ALLOWED 4
++
++/* Note: CANREACH_USINGWEAPON and CANREACH_CANTOUCH are not referenced in canReach because those are set by just a something&1 and a (something&1)<<1 */
++
++/atom/proc/canReach(mob/user, obj/item/weapon/usingWeapon, ignoreNextMoveTime)
++	if (((!user.canmove) && (!istype(user, /mob/ai))) || user.stat != 0)
++		return 0
++	/* This line broke my mental parser. --Stephen001 */
++	if ((!(src in user.contents) && (((!(isturf(src)) && (!(isturf(src.loc)) && (src.loc && !(isturf(src.loc.loc))))) || !(isturf(user.loc))) && (src.loc != user.loc && (!(istype(src, /obj/screen)) && !(user.contents.Find(src.loc)))))))
++		return 0
++	/* Breaks double-clicking on an equipment slot to place an item there, unfortunately. */
++	/*
++	//If the dclicked item is not in our inventory
++	if (!(src in user.contents))
++		//If the item is not a turf, and it is not on a turf, and it is inside something else which is not in a turf
++		if (!(isturf(src)) && (!(isturf(src.loc)) && (src.loc && !(isturf(src.loc.loc)))))
++			return
++		//If not, if we are inside some item instead of on a turf, and the dclicked item is not in the same place as us, and the dclicked item is not a screen object, and the dclicked item is not inside an item in our inventory.
++		else if	((!(isturf(user.loc))) && (src.loc != user.loc && (!(istype(src, /obj/screen)) && !(user.contents.Find(src.loc)))))
++			return
++	*/
++
++	/* That's checking to see if it's being held/worn or something like that, methinks */
++	var/t5 = (get_dist(src, user) <= 1 || src.loc == user)
++	if (istype(user, /mob/ai))
++		t5 = 1
++	else if (istype(user, /mob/drone))
++		if (user:selectedTool == user:aiInterface)
++			if (istype(user:controlledBy, /mob/ai))
++				t5 = 1
++				user = user:controlledBy
++				usingWeapon = null
++
++	if ((istype(src, /obj/item/weapon/organ) && src in user.contents))
++		var/mob/human/H = user
++		if (istype(user, /mob/human))
++			if (!(src == H.l_store || src == H.r_store))
++				return 0
++		else
++			return 0
++	/* Suggested fix by shadowlord13 for Bug #1952091. --Stephen001 */
++	var/turf/turfLoc = (istype(src, /turf) ? src : src.loc)
++
++	/* Seems like a pretty important expression. Dare I fathom what it checks? --Stephen001 */
++	/* flag 16 in this case apparently disables the distance check and the alternate 'is in contents' check in the var/t5 line.
++		It's used on guns, for instance. --shadowlord13 */
++	if (((t5 || (usingWeapon && (usingWeapon.flags & 16))) && !(istype(src, /obj/screen))))
++		if (ignoreNextMoveTime==0)
++			if (user.next_move < world.time)
++				user.prev_move = user.next_move
++				user.next_move = world.time + 10
++			else
++				return 0
++		if ((turfLoc && (get_dist(src, user) < 2 || turfLoc == user.loc)))
++			var/direct = get_dir(user, src)
++			var/obj/item/weapon/dummy/D = new /obj/item/weapon/dummy(user.loc)
++			var/ok = 0
++			if ((direct - 1) & direct)
++				var/turf/T
++				switch(direct)
++					if(5.0)
++						T = get_step(user, NORTH)
++						if (T.Enter(D, src))
++							D.loc = T
++							T = turfLoc
++							if (T.Enter(D, src))
++								ok = 1
++						else
++							T = get_step(user, EAST)
++							if (T.Enter(D, src))
++								D.loc = T
++								T = turfLoc
++								if (T.Enter(D, src))
++									ok = 1
++					if(6.0)
++						T = get_step(user, SOUTH)
++						if (T.Enter(D, src))
++							D.loc = T
++							T = turfLoc
++							if (T.Enter(D, src))
++								ok = 1
++						else
++							T = get_step(user, EAST)
++							if (T.Enter(D, src))
++								D.loc = T
++								T = turfLoc
++								if (T.Enter(D, src))
++									ok = 1
++					if(9.0)
++						T = get_step(user, NORTH)
++						if (T.Enter(D, src))
++							D.loc = T
++							T = turfLoc
++							if (T.Enter(D, src))
++								ok = 1
++						else
++							T = get_step(user, WEST)
++							if (T.Enter(D, src))
++								D.loc = T
++								T = turfLoc
++								if (T.Enter(D, src))
++									ok = 1
++					if(10.0)
++						T = get_step(user, SOUTH)
++						if (T.Enter(D, src))
++							D.loc = T
++							T = turfLoc
++							if (T.Enter(D, src))
++								ok = 1
++						else
++							T = get_step(user, WEST)
++							if (T.Enter(D, src))
++								D.loc = T
++								T = turfLoc
++								if (T.Enter(D, src))
++									ok = 1
++					else
++			else
++				if (turfLoc.Enter(D, src))
++					ok = 1
++				else
++					if ((src.flags & 512 && get_dir(src, user) & src.dir))
++						ok = 1
++						if (user.loc != turfLoc)
++							for(var/atom/A in user.loc)
++								if ((!A.CheckExit(user, src.loc)) && A != user)
++									ok = 0
++			del(D)
++			if (!(ok))
++				return 0
++		//user << "Debug message: usingWeapon [usingWeapon] t5 [t5] src [src] user [user]"
++
++		return (((t5!=0)&1)<<1) | ((usingWeapon!=0)&1) | CANREACH_ALLOWED
++	else
++		if (istype(src, /obj/screen))
++			if (ignoreNextMoveTime==0)
++				if (user.next_move < world.time)
++					user.prev_move = user.next_move
++					user.next_move = world.time + 10
++				else
++					return 0
++			return (((t5!=0)&1)<<1) | ((usingWeapon!=0)&1) | CANREACH_ALLOWED
++	return 0
++
+ /atom/Click()
+ 	if (!usr.disable_one_click)
+ 		return DblClick()
+@@ -5791,7 +5791,7 @@
+ 		return
+ 	else
+ 		usr:lastDblClick = world.time
+-	
++
+ 	..()
+ 	// I changed everything in this function from using usr to user before I found out that you can actually change the value of usr.
+ 	var/mob/user = usr
+@@ -5800,7 +5800,7 @@
+ 		usr = user
+ 
+ 	var/obj/item/weapon/W = user.equipped()
+-	if (user.stat == 0)
++	if (user.stat == 0)
+ 		if (istype(user, /mob/drone))
+ 			//check to see if it's one of our tools or the boxes they're in
+ 			var/obj/item/weapon/tool = user:checkIsOurTool(src)
+@@ -5821,56 +5821,62 @@
+ 		if (W == src)
+ 			//user.client_mob() << "Debug message: user clicked their active item."
+ 			spawn(0) W.attack_self(user)
+-			return
++			return
+ 
+-	var/retval = src.canReach(user, W, 0)
+-	
+-	if (retval==0)
+-		return
+-	
++	var/retval = src.canReach(user, W, 0)
++
++	if (retval==0)
++		return
++
+ 	if (istype(user, /mob/drone))
+ 		if (user:selectedTool == user:aiInterface)
+ 			if (istype(user:controlledBy, /mob/ai))
+ 				user = user:controlledBy
+ 				W = null
+-	
+-	if (!(retval & CANREACH_USINGWEAPON))
+-		W = null
+-	
+-	//if (((t5 || (usingWeapon && (usingWeapon.flags & 16))) && !(istype(src, /obj/screen))))
+-	
+-	if (retval & CANREACH_ALLOWED)
+-		if (!( user.restrained() ))
+-			if ((W && !( istype(src, /obj/screen) )))
+-				src.attackby(W, user)
+-				if (W)
+-					W.afterattack(src, user)
+-			else
+-				if (istype(user, /mob/human))
+-					src.attack_hand(user, user.hand)
+-				else
+-					if (istype(user, /mob/monkey))
+-						src.attack_paw(user, user.hand)
+-		else
+-			if (istype(user, /mob/human))
+-				src.hand_h(user, user.hand)
+-			else
+-				if (istype(user, /mob/monkey))
++
++	if (!(retval & CANREACH_USINGWEAPON))
++		W = null
++
++	//if (((t5 || (usingWeapon && (usingWeapon.flags & 16))) && !(istype(src, /obj/screen))))
++
++	if (retval & CANREACH_ALLOWED)
++		if (!( user.restrained() ))
++			if ((W && !( istype(src, /obj/screen) )))
++				src.attackby(W, user)
++				if (W)
++					W.afterattack(src, user)
++			else
++				if (istype(user, /mob/human))
++					src.attack_hand(user, user.hand)
++				else
++					if (istype(user, /mob/monkey))
++						src.attack_paw(user, user.hand)
++					else
++						if (istype(user, /mob/ai))
++							src.attack_ai(user, user.hand)
++		else
++			if (istype(user, /mob/human))
++				src.hand_h(user, user.hand)
++			else
++				if (istype(user, /mob/monkey))
+ 					src.hand_p(user, user.hand)
+-			
++				else
++					if (istype(user, /mob/ai))
++						src.hand_a(user, user.hand)
+ 
++
+ /obj/proc/updateDialog()
+-	var/list/nearby = viewers(1, src)
++	var/list/nearby = viewers(1, src)
+ 	var/skipAI = 0
+ 	for(var/mob/M in nearby)
+ 		if ((M.client && M.machine == src))
+ 			src.attack_hand(M)
+ 		else if (istype(M, /mob/drone) && M.machine==src)
+-			if (M:controlledBy!=null)
+-				if ((!istype(M:controlledBy, /mob/ai)) || (!istype(M:equipped(), /obj/item/weapon/drone/aiInterface)))
+-					src.attack_hand(M)
+-					if (istype(M:controlledBy, /mob/ai))
+-						skipAI = 1
++			if (M:controlledBy!=null)
++				if ((!istype(M:controlledBy, /mob/ai)) || (!istype(M:equipped(), /obj/item/weapon/drone/aiInterface)))
++					src.attack_hand(M)
++					if (istype(M:controlledBy, /mob/ai))
++						skipAI = 1
+ 	if (!skipAI)
+ 		AutoUpdateAI(src, 0)
+ 
+@@ -5880,10 +5886,10 @@
+ 	for(var/mob/M in nearby)
+ 		if ((M.client && M.machine == src))
+ 			src:attack_self(M)
+-
+-//Used for infra_sensor, etc
+-/obj/proc/updateSelfDialog(atom/origin)
+-	var/list/nearby = viewers(1, origin)
+-	for(var/mob/M in nearby)
+-		if (M.client)
+-			src:attack_self(M)
++
++//Used for infra_sensor, etc
++/obj/proc/updateSelfDialog(atom/origin)
++	var/list/nearby = viewers(1, origin)
++	for(var/mob/M in nearby)
++		if (M.client)
++			src:attack_self(M)

@@ -1,0 +1,327 @@
+{
+  "1936681": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 2
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/2/",
+    "cited_by_revisions": [
+      12
+    ],
+    "cited_in_tickets": []
+  },
+  "1936685": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 3
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/3/",
+    "cited_by_revisions": [
+      3
+    ],
+    "cited_in_tickets": []
+  },
+  "1936688": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 4
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/4/",
+    "cited_by_revisions": [
+      5
+    ],
+    "cited_in_tickets": []
+  },
+  "1937139": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 5
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/5/",
+    "cited_by_revisions": [
+      4
+    ],
+    "cited_in_tickets": []
+  },
+  "1937196": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 6
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/6/",
+    "cited_by_revisions": [],
+    "cited_in_tickets": [
+      {
+        "tracker": "bugs",
+        "number": 9
+      }
+    ]
+  },
+  "1939088": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 7
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/7/",
+    "cited_by_revisions": [
+      64,
+      67
+    ],
+    "cited_in_tickets": [
+      {
+        "tracker": "bugs",
+        "number": 9
+      }
+    ]
+  },
+  "1952091": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 9
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/9/",
+    "cited_by_revisions": [
+      17,
+      18
+    ],
+    "cited_in_tickets": [
+      {
+        "tracker": "bugs",
+        "number": 6
+      },
+      {
+        "tracker": "bugs",
+        "number": 7
+      }
+    ]
+  },
+  "1952749": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 10
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/10/",
+    "cited_by_revisions": [
+      20
+    ],
+    "cited_in_tickets": []
+  },
+  "1965809": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 11
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/11/",
+    "cited_by_revisions": [
+      28
+    ],
+    "cited_in_tickets": []
+  },
+  "1980809": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 13
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/13/",
+    "cited_by_revisions": [
+      80,
+      81,
+      83
+    ],
+    "cited_in_tickets": []
+  },
+  "1980814": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 15
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/15/",
+    "cited_by_revisions": [
+      93
+    ],
+    "cited_in_tickets": []
+  },
+  "1980820": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 16
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/16/",
+    "cited_by_revisions": [
+      95
+    ],
+    "cited_in_tickets": []
+  },
+  "1986988": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 17
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/17/",
+    "cited_by_revisions": [
+      38,
+      51,
+      52
+    ],
+    "cited_in_tickets": [
+      {
+        "tracker": "bugs",
+        "number": 14
+      }
+    ]
+  },
+  "1987041": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 18
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/18/",
+    "cited_by_revisions": [
+      43
+    ],
+    "cited_in_tickets": []
+  },
+  "1987047": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 19
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/19/",
+    "cited_by_revisions": [
+      44
+    ],
+    "cited_in_tickets": []
+  },
+  "1987067": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 22
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/22/",
+    "cited_by_revisions": [
+      48
+    ],
+    "cited_in_tickets": []
+  },
+  "1987483": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 23
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/23/",
+    "cited_by_revisions": [
+      48
+    ],
+    "cited_in_tickets": []
+  },
+  "1989294": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 24
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/24/",
+    "cited_by_revisions": [
+      85
+    ],
+    "cited_in_tickets": []
+  },
+  "1999232": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 35
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/35/",
+    "cited_by_revisions": [
+      63
+    ],
+    "cited_in_tickets": []
+  },
+  "2002317": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 41
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/41/",
+    "cited_by_revisions": [
+      82
+    ],
+    "cited_in_tickets": []
+  },
+  "2002381": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 42
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/42/",
+    "cited_by_revisions": [
+      94
+    ],
+    "cited_in_tickets": []
+  },
+  "2002387": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 43
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/43/",
+    "cited_by_revisions": [
+      92
+    ],
+    "cited_in_tickets": []
+  },
+  "2002391": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 44
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/44/",
+    "cited_by_revisions": [
+      90
+    ],
+    "cited_in_tickets": []
+  },
+  "2002397": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 45
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/45/",
+    "cited_by_revisions": [
+      89
+    ],
+    "cited_in_tickets": []
+  },
+  "2003004": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 46
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/46/",
+    "cited_by_revisions": [
+      87
+    ],
+    "cited_in_tickets": []
+  },
+  "2013401": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 48
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/48/",
+    "cited_by_revisions": [
+      91
+    ],
+    "cited_in_tickets": []
+  },
+  "2013405": {
+    "ticket": {
+      "tracker": "bugs",
+      "number": 49
+    },
+    "redirect": "https://sourceforge.net/p/openss13/bugs/49/",
+    "cited_by_revisions": [
+      91
+    ],
+    "cited_in_tickets": []
+  }
+}
