@@ -3043,6 +3043,7 @@
 	src.blind.screen_loc = "1,1 to 15,15"
 	src.flash.screen_loc = "1,1 to 15,15"
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.flash.layer = 17
 	src.client.screen.len = null
 	src.client.screen -= list( src.zone_sel, src.oxygen, src.i_select, src.m_select, src.toxin, src.internals, src.fire, src.hands, src.healths, src.pullin, src.blind, src.flash, src.rest, src.sleep, src.mach )
@@ -3124,6 +3125,7 @@
 	src.stat = 2
 	src.canmove = 0
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.lying = 1
 	src.rname = "[src.rname] (Dead)"
 	//src.icon_state = "dead"
@@ -3705,8 +3707,10 @@
 		if ((src.blind && src.stat != 2))
 			if (src.blinded)
 				src.blind.layer = 18
+				src.blind.plane = 0
 			else
 				src.blind.layer = 0
+				src.blind.plane = -1
 				if ((src.disabilities & 1 && !( istype(src.glasses, /obj/item/weapon/clothing/glasses/regular) )))
 					src.client.screen -= src.hud_used.vimpaired
 					src.client.screen += src.hud_used.vimpaired
@@ -6205,6 +6209,7 @@
 	src.blind.screen_loc = "1,1 to 15,15"
 	src.flash.screen_loc = "1,1 to 15,15"
 	src.blind.layer = 0
+	src.blind.plane = -1
 	src.flash.layer = 17
 	src.sleep.layer = 20
 	src.rest.layer = 20
@@ -6358,6 +6363,7 @@
 	src.canmove = 0
 	if (src.blind)
 		src.blind.layer = 0
+		src.blind.plane = -1
 	src.lying = 1
 	src.rname = "[src.rname] (Dead)"
 	//src.icon_state = "dead"
@@ -6743,8 +6749,10 @@
 		if ((src.blind && src.stat != 2))
 			if (src.blinded)
 				src.blind.layer = 18
+				src.blind.plane = 0
 			else
 				src.blind.layer = 0
+				src.blind.plane = -1
 				if (src.eye_blurry)
 					src.client.screen -= src.hud_used.blurry
 					src.client.screen += src.hud_used.blurry

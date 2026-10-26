@@ -142,6 +142,7 @@
 		src.canmove = 0
 		if (src.blind)
 			src.blind.layer = 0
+			src.blind.plane = -1
 		src.sight |= SEE_TURFS
 		src.sight |= SEE_MOBS
 		src.sight |= SEE_INFRA
@@ -215,6 +216,7 @@
 						//stage = 4.5
 						if (src.blind.layer!=0)
 							src.blind.layer = 0
+							src.blind.plane = -1
 						src.sight |= SEE_TURFS
 						src.sight |= SEE_MOBS
 						src.sight |= SEE_INFRA
@@ -246,6 +248,7 @@
 						src.blind.screen_loc = "1,1 to 15,15"
 						if (src.blind.layer!=18)
 							src.blind.layer = 18
+							src.blind.plane = 0
 						src.sight = src.sight&~SEE_TURFS
 						src.sight = src.sight&~SEE_MOBS
 						src.sight = src.sight&~SEE_INFRA
@@ -466,6 +469,7 @@
 		src.blind.name = " "
 		src.blind.screen_loc = "1,1 to 15,15"
 		src.blind.layer = 0
+		src.blind.plane = -1
 		src.client.screen += src.blind
 		//src << browse('help.htm', "window=help")
 		if (CanAdmin())
