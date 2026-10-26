@@ -106,7 +106,7 @@ obj/machinery/power/monitor
 
 		t += "<BR><HR><A href='?src=\ref[src];close=1'>Close</A></TT>"
 
-		user << browse(t, "window=powcomp;size=450x740")
+		user << browse(HTML_SKELETON(t), "window=powcomp;size=450x740")
 
 
 	// Handle topic links from the interaction window

@@ -208,7 +208,7 @@ obj/machinery/power/turbine
 		t += "</PRE><HR><A href='?src=\ref[src];close=1'>Close</A>"
 
 		t += "</TT>"
-		user << browse(t, "window=turbine")
+		user << browse(HTML_SKELETON(t), "window=turbine")
 
 		return
 

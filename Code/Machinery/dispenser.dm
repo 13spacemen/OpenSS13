@@ -40,7 +40,7 @@ obj/machinery/dispenser
 
 		user.machine = src
 		var/dat = text("<TT><B>Loaded Tank Dispensing Unit</B><BR>\n<FONT color = 'blue'><B>Oxygen</B>: []</FONT> []<BR>\n<FONT color = 'orange'><B>Plasma</B>: []</FONT> []<BR>\n</TT>", src.o2tanks, (src.o2tanks ? text("<A href='?src=\ref[];oxygen=1'>Dispense</A>", src) : "empty"), src.pltanks, (src.pltanks ? text("<A href='?src=\ref[];plasma=1'>Dispense</A>", src) : "empty"))
-		user << browse(dat, "window=dispenser")
+		user << browse(HTML_SKELETON(dat), "window=dispenser")
 		return
 
 	// dispense a tank when topic link is clicked on from interaction window

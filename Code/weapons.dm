@@ -44,7 +44,7 @@
 
 	user.machine = src
 	var/dat = text("<TT><B>Infrared Sensor</B><BR>\n<B>Passive Emitter</B>: []<BR>\n<B>Active Emitter</B>: <A href='?src=\ref[];active=0'>Burst Fire</A>\n</TT>", (src.passive ? text("<A href='?src=\ref[];passive=0'>On</A>", src) : text("<A href='?src=\ref[];passive=1'>Off</A>", src)), src)
-	user << browse(dat, "window=infra_sensor")
+	user << browse(HTML_SKELETON(dat), "window=infra_sensor")
 	return
 
 /obj/item/weapon/infra_sensor/Topic(href, href_list)
@@ -138,7 +138,7 @@
 
 	user.machine = src
 	var/dat = text("<TT><B>Proximity Sensor</B>\n<B>Status</B>: []<BR>\n[]\n</TT>", (src.state ? text("<A href='?src=\ref[];state=0'>On</A>", src) : text("<A href='?src=\ref[];state=1'>Off</A>", src)), (src.state ? "<b>\red Time On (30)</b>" : text("<A href='?src=\ref[];time=1'>Time On (30)</A>", src)))
-	user << browse(dat, "window=prox")
+	user << browse(HTML_SKELETON(dat), "window=prox")
 	return
 
 
@@ -280,7 +280,7 @@
 
 	user.machine = src
 	var/dat = text("<TT><B>Infrared Laser</B>\n<B>Status</B>: []<BR>\n<B>Visibility</B>: []<BR>\n</TT>", (src.state ? text("<A href='?src=\ref[];state=0'>On</A>", src) : text("<A href='?src=\ref[];state=1'>Off</A>", src)), (src.visible ? text("<A href='?src=\ref[];visible=0'>Visible</A>", src) : text("<A href='?src=\ref[];visible=1'>Invisible</A>", src)))
-	user << browse(dat, "window=infra")
+	user << browse(HTML_SKELETON(dat), "window=infra")
 	return
 
 /obj/item/weapon/infra/Topic(href, href_list)
@@ -456,7 +456,7 @@
 		var/second = src.time % 60
 		var/minute = (src.time - second) / 60
 		var/dat = text("<TT><B>Timing Unit</B>\n[] []:[]\n<A href='?src=\ref[];tp=-30'>-</A> <A href='?src=\ref[];tp=-1'>-</A> <A href='?src=\ref[];tp=1'>+</A> <A href='?src=\ref[];tp=30'>+</A>\n</TT>", (src.timing ? text("<A href='?src=\ref[];time=0'>Timing</A>", src) : text("<A href='?src=\ref[];time=1'>Not Timing</A>", src)), minute, second, src, src, src, src)
-		user << browse(dat, "window=timer")
+		user << browse(HTML_SKELETON(dat), "window=timer")
 	else
 		user << browse(null, "window=timer")
 		user.machine = null

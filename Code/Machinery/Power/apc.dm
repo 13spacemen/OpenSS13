@@ -331,7 +331,7 @@ obj/machinery/power/apc
 		t += "<BR><HR><A href='?src=\ref[src];close=1'>Close</A>"
 
 		t += "</TT>"
-		user << browse(t, "window=apc")
+		user << browse(HTML_SKELETON(t), "window=apc")
 		return
 
 

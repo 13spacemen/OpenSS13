@@ -245,7 +245,7 @@
 		t += "<BR></PRE><HR><A href='?src=\ref[src];close=1'>Close</A>"
 
 		t += "</TT>"
-		user << browse(t, "window=smes;size=460x300")
+		user << browse(HTML_SKELETON(t), "window=smes;size=460x300")
 		return
 
 

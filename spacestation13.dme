@@ -31,6 +31,7 @@ AUTO_FILE_DIR: ON
 // BEGIN_INCLUDE
 #include "ss13h_new.dmm"
 #include "Code\!atoms.dm"
+#include "Code\_html_assistant.dm"
 #include "Code\aaaDefines.dm"
 #include "Code\airtunnel.dm"
 #include "Code\areas.dm"

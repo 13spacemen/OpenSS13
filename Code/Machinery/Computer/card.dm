@@ -57,7 +57,7 @@ obj/machinery/computer/card
 			for(var/datum/data/record/t in data_core.general)
 				d1 += "[t.fields["name"]] - [t.fields["rank"]]<BR>"
 
-			dat = "<HTML><HEAD></HEAD><BODY><TT>[d2]<BR>\n<BR>\n<B>Crew Manifest:</B><BR>\n[d1]\n<BR>\n<A href='?src=\ref[src];print=1'>Print</A><BR>\n<BR>\n<A href='?src=\ref[src];mode=0'>Access ID modification console.</A><BR>\n</TT></BODY></HTML>"
+			dat = "<TT>[d2]<BR>\n<BR>\n<B>Crew Manifest:</B><BR>\n[d1]\n<BR>\n<A href='?src=\ref[src];print=1'>Print</A><BR>\n<BR>\n<A href='?src=\ref[src];mode=0'>Access ID modification console.</A><BR>\n</TT>"
 		else
 			var/d1 = "<A href='?src=\ref[src];auth=1'>{Log in}</A>"
 			if ((src.authenticated && src.modify))
@@ -146,7 +146,7 @@ obj/machinery/computer/card
 				dat = text("<TT><B>Identification Card Modifier</B><BR>\n<I>Please Insert the cards into the slots</I><BR>\nTarget: <A href='?src=\ref[];modify=1'>[]</A><BR>\nConfirm Identity: <A href='?src=\ref[];scan=1'>[]</A><BR>\n-----------------<BR>\n[]<BR>\n<BR>\n<BR>\n<A href='?src=\ref[];mode=1'>Access Crew Manifest</A><BR>\n</TT>", src, (src.modify ? text("[]", src.modify.name) : "----------"), src, (src.scan ? text("[]", src.scan.name) : "----------"), d1, src)
 			else
 				dat = text("<TT><B>[]</B><BR>\n<I>[]</I><BR>\n[] <A href='?src=\ref[];modify=1'>[]</A><BR>\n[] <A href='?src=\ref[];scan=1'>[]</A><BR>\n-----------------<BR>\n[]<BR>\n<BR>\n<BR>\n<A href='?src=\ref[];mode=1'>[]</A><BR>\n</TT>", stars("Identification Card Modifier"), stars("Please Insert the cards into the slots"), stars("Target:"), src, (src.modify ? text("[]", stars(src.modify.name)) : "----------"), stars("Confirm Identity:"), src, (src.scan ? text("[]", stars(src.scan.name)) : "----------"), d1, src, stars("Access Crew Manifest"))
-		user << browse(dat, "window=id_com;size=400x500")
+		user << browse(HTML_SKELETON(dat), "window=id_com;size=400x500")
 
 
 	// Handle topic links from interaction window

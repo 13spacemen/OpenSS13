@@ -79,7 +79,7 @@ obj/machinery/computer/secure_data
 					else
 			else
 				dat += text("<A href='?src=\ref[];login=1'>{Log In}</A>", src)
-		user << browse(text("<HEAD><TITLE>Security Records</TITLE></HEAD><TT>[]</TT>", dat), "window=secure_rec")
+		user << browse(HTML_SKELETON_TITLE("Security Records", "<TT>[dat]</TT>"), "window=secure_rec")
 
 
 	// Handle topic links

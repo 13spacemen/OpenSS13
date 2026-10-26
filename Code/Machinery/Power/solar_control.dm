@@ -155,7 +155,7 @@ obj/machinery/power/solar_control
 		t += "</PRE><HR><A href='?src=\ref[src];close=1'>Close</A>"
 
 		t += "</TT>"
-		user << browse(t, "window=solcon")
+		user << browse(HTML_SKELETON(t), "window=solcon")
 
 		return
 

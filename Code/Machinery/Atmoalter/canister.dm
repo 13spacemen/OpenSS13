@@ -245,7 +245,7 @@ Pipe Valve Status: [ct]<BR>
 <A href='?src=\ref[user];mach_close=canister'>Close</A><BR>
 </TT>"}
 
-		user << browse(dat, "window=canister;size=600x300")
+		user << browse(HTML_SKELETON(dat), "window=canister;size=600x300")
 		return
 
 

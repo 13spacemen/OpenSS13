@@ -275,7 +275,7 @@
 		t += text("Turrets [] - <A href='?src=\ref[];toggleOn=1'>[]?</a><br>\n", src.enabled?"activated":"deactivated", src, src.enabled?"Disable":"Enable")
 		t += text("Currently set for [] - <A href='?src=\ref[];toggleLethal=1'>Change to []?</a><br>\n", src.lethal?"lethal":"stun repeatedly", src,  src.lethal?"Stun repeatedly":"Lethal")
 
-	user << browse(t, "window=turretid")
+	user << browse(HTML_SKELETON(t), "window=turretid")
 
 /obj/machinery/turretid/Topic(href, href_list)
 	..()
