@@ -11,7 +11,7 @@ This repository holds the project's complete history, converted from its SourceF
 ## Building and running
 
 1. Install BYOND, which includes Dream Maker (the compiler) and Dream Daemon (the server).
-2. Open `spacestation13.dme` in Dream Maker and compile it. The map is `ss13h_new.dmp`.
+2. Open `spacestation13.dme` in Dream Maker and compile it. The map is `ss13h_new.dmm`.
 3. Host the compiled `spacestation13.dmb` with Dream Daemon.
 
 The server reads `config.txt` at startup and falls back to default settings without it. `mode.txt` holds the default game mode; the server rewrites it when the mode is changed.
