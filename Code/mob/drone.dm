@@ -765,7 +765,7 @@
 /proc/listToString(var/list/L)
 	var/output = "{"
 	for (var/entry in L)
-		if (lentext(output)==1)
+		if (length(output)==1)
 			output += "[entry]"
 		else
 			output += ", [entry]"
