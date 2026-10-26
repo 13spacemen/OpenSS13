@@ -4,5 +4,8 @@
 *.lk
 *.int
 
+# Savefiles the game writes at runtime
+*.sav
+
 # Editor settings
 .vscode/*
