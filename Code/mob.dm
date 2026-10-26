@@ -4834,7 +4834,6 @@
 /mob/proc/death()
 
 	src.timeofdeath = world.time
-	return ..()
 	return
 
 /mob/proc/restrained()
