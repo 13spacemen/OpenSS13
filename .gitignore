@@ -1,0 +1,5 @@
+# BYOND build output and lock files
+*.dmb
+*.rsc
+*.lk
+*.int
