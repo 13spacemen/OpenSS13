@@ -25,9 +25,7 @@ Humans can open the take-off/put-on dialog for the AI, the AI can probably do th
 
 ### shadowlord13 · 2008-06-15 03:51:15 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Should be fixed in revision 53 on the 1.0 rc-1 branch, but needs to be tested to verify: Humans and monkeys should no longer be able to open the AI's dialog, and the AI should no longer be able to open anyone's.
 
@@ -45,13 +43,11 @@ Should be fixed in revision 53 on the 1.0 rc-1 branch, but needs to be tested to
 
 ### sf-robot · 2008-07-06 02:20:20 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ## Commits that cite this ticket

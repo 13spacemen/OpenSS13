@@ -19,18 +19,18 @@ When the shuttle arrives, the departure time counts down at double speed, and wh
 
 The cause was that /datum/control/gameticker/proc/timeup\(\), which is called by extend\_process, would spawn\(0\) call extend\_process and then return, leaving two copies of extend\_process running.
 
-To fix it in my copy of the source, I simply commented out the relevant block in timeup\(\):
-src.timeleft = 1800
-src.shuttle\_location = 1
-/\*switch\(src.mode\)
-if\("meteor"\)
-spawn\( 0 \)
-meteor\_process\(\)
-return
-else
-spawn\( 0 \)
-extend\_process\(\)
-return
+To fix it in my copy of the source, I simply commented out the relevant block in timeup\(\):\
+src.timeleft = 1800\
+src.shuttle\_location = 1\
+/\*switch\(src.mode\)\
+if\("meteor"\)\
+spawn\( 0 \)\
+meteor\_process\(\)\
+return\
+else\
+spawn\( 0 \)\
+extend\_process\(\)\
+return\
 \*/
 
 There are other alternative fixes, though, such as stopping the initial extend\_process after it calls timeup\(\).
@@ -47,9 +47,7 @@ There are other alternative fixes, though, such as stopping the initial extend\_
 
 ### stephen001 · 2008-04-30 22:13:43 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 I have no means of testing this. Bit of a 3rd year project report going on, too.
 
@@ -59,9 +57,7 @@ I have no means of testing this. Bit of a 3rd year project report going on, too.
 
 ### hobnob13 · 2008-05-02 15:48:31 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 Fix as per sl13 implemented in rev 20. Seems to work just fine.
 

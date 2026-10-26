@@ -17,16 +17,16 @@
 
 Not a major one, but it is a little misleading. Report from Animay:
 
-\---------------------------------------------------------
+\---------------------------------------------------------\
 In the show panel, toggling player voting on/off produces odd messages.
 
 Example:
 
-Player mode voting toggled to On.
-Player mode voting toggled to On.
+Player mode voting toggled to On.\
+Player mode voting toggled to On.\
 Player mode voting toggled to On.
 
-It also has been locked on "off" before for me. I think it does change the ability to vote modes, but it doesn't display right on the output window.
+It also has been locked on "off" before for me. I think it does change the ability to vote modes, but it doesn't display right on the output window.\
 \---------------------------------------------------------
 
 ## Comments (5)
@@ -37,9 +37,7 @@ It also has been locked on "off" before for me. I think it does change the abili
 
 ### hobnob13 · 2008-04-08 15:43:19 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 Should be fixed as of revision 5.
 

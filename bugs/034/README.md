@@ -23,9 +23,7 @@ This promotes grief as anyone decent can kill someone with a toolbox in less tha
 
 ### shadowlord13 · 2008-06-21 01:23:11 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 Fixed. For some reason I can't assign this bug to me or change anything about it.
 
@@ -36,9 +34,7 @@ Fixed. For some reason I can't assign this bug to me or change anything about it
 
 ### stephen001 · 2008-06-21 01:43:32 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 Just done the associated bug tracking, sorry for the spam.
 
@@ -48,13 +44,11 @@ Just done the associated bug tracking, sorry for the spam.
 
 ### sf-robot · 2008-07-05 02:20:18 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ## Commits that cite this ticket

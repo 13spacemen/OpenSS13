@@ -19,9 +19,9 @@ http://forums.ss13.net/index.php/topic,8610.0.html
 
 Originally reported by Nickr5.
 
-Strap someone to a chair inside an open closet.
-Close the closet.
-Move the closet away from the chair.
+Strap someone to a chair inside an open closet.\
+Close the closet.\
+Move the closet away from the chair.\
 Open the closet. 
 
 This separation from the chair means they are still strapped to it and thus cannot move. Due to the distance between them and the chair, they cannot unstrap themselves, essentially leaving themselves immobilised.
@@ -39,9 +39,7 @@ This separation from the chair means they are still strapped to it and thus cann
 
 ### zjm7891 · 2008-06-28 06:24:29 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 Should be solved in REV 85.  I'll test it out asap.
 

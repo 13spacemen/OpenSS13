@@ -27,9 +27,7 @@ I read the attackby proc for canisters and all the actions in that proc are not 
 
 ### stephen001 · 2008-04-26 06:37:28 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 Seems I was a little too downstream. Before the CheckExit calls, we do \(src.flags & 512\), meaning it's a window.
 
@@ -37,9 +35,7 @@ Will look into it further.
 
 ### shadowlord13 · 2008-04-26 14:42:16 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 I was going to reply here, but can't \(due to not being in the dev team, presumably\): http://forums.ss13.net/index.php/topic,8463.0.html
 
@@ -49,21 +45,19 @@ in /atom/DoubleClick, find this line: if \(src.loc.Enter\(D, src\)\)
 
 That is where the problem is. If you are targetting, say, a closet, its loc will be the turf it is on. But if you are targetting a \*turf\*, then its loc will be the area that it is in. So, when you target the ground, this check returns true because \*it isn't checking the turf's Enter at all\*.
 
-Simple fix:
-1\. Above if \(\(\(t5 || \(W && \(W.flags & 16\)\)\) && \!\( istype\(src, /obj/screen\) \)\)\) add:
-var/turf/turfTile = null
-if \(istype\(src, /turf\)\)
-turfTile = src
-else
+Simple fix:\
+1\. Above if \(\(\(t5 || \(W && \(W.flags & 16\)\)\) && \!\( istype\(src, /obj/screen\) \)\)\) add:\
+var/turf/turfTile = null\
+if \(istype\(src, /turf\)\)\
+turfTile = src\
+else\
 turfTile = src.loc
 
 2\. Change all references to src.loc in the function after that point to turfTile instead.
 
 ### stephen001 · 2008-04-28 02:04:42 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 Implemented the fix suggested by shadowlord13. Unfortunately I can't test it, so could someone test revision 17, then report the results here?
 
@@ -77,9 +71,7 @@ Implemented the fix suggested by shadowlord13. Unfortunately I can't test it, so
 
 ### shadowlord13 · 2008-04-28 02:47:37 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 You appear to have missed one line: 	if \(src.loc.Enter\(D, src\)\)
 

@@ -21,15 +21,13 @@ The AI does not lose HP over time like it should if its HP drops below 0. It als
 
 ### shadowlord13 · 2008-06-07 16:15:30 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Made a math error in the time there. 
 
-More precisely:
-It's taking 1 damage every 50 ticks \(instead of every tick\), which means:
-50\*100 = 5000 ticks to hit 0 HP, so 500 seconds or 8 1/3 minutes
+More precisely:\
+It's taking 1 damage every 50 ticks \(instead of every tick\), which means:\
+50\*100 = 5000 ticks to hit 0 HP, so 500 seconds or 8 1/3 minutes\
 Then another 8 1/3 minutes to hit -100.
 
 So it's actually about 16 minutes, rather than 20.

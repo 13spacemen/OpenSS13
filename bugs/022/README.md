@@ -25,9 +25,7 @@ If the AI's APC's main breaker is flipped off, it fails to find the APC when it 
 
 ### shadowlord13 · 2008-06-07 16:15:51 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Fixed in revision 48.
 

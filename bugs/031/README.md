@@ -15,7 +15,7 @@
 
 ## Description
 
-\(items.dm\)
+\(items.dm\)\
 The game kit window didn't update for the AI.
 
 Brutepack and ointment amount were being reduced when used on non-humans, even though they didn't work on non-humans \(they also recalculated their health\)
@@ -32,9 +32,7 @@ Brutepack and ointment didn't give any indication that they weren't doing anythi
 
 ### shadowlord13 · 2008-06-16 02:30:50 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 All fixed in revision 53. \(All were in items.dm\)
 

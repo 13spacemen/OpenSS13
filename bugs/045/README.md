@@ -25,9 +25,7 @@ On the security pads, when you press emergency close, it only closed the outer d
 
 ### zjm7891 · 2008-06-28 08:31:27 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 The Emergency close option had a problem where its code didn't mirror emergency open.  Fixed in Rev 89
 

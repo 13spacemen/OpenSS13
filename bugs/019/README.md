@@ -28,9 +28,7 @@ Changing it to: "You cannot perform this action\! You must be of a higher admini
 
 ### shadowlord13 · 2008-06-07 03:01:09 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Fixed in revision 44.
 

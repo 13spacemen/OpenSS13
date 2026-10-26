@@ -21,9 +21,7 @@ Pods can be driven by people in cuffs, as well as people welded in closets ect. 
 
 ### zjm7891 · 2008-07-08 14:57:03 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed in REV 94
 

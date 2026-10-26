@@ -27,9 +27,7 @@ And punching it should probably harm the attacker's hand instead of the AI.
 
 ### shadowlord13 · 2008-06-15 03:54:13 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 All of these should no longer be possible as of revision 53 on the 1.0 rc-1 branch \(and earlier on the trunk\). 
 

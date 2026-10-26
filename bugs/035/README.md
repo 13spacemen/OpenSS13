@@ -23,11 +23,9 @@ Essentially, Data add does not add the contents of disk two onto the end of the 
 
 ### stephen001 · 2008-06-21 00:06:22 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
-Fixed in revision 63. Attached are patches for both trunk and RC 1, they should be good for anything back to revision 57.
+Fixed in revision 63. Attached are patches for both trunk and RC 1, they should be good for anything back to revision 57.\
 File Added: dna-add-typo-trunk.patch
 
 ### stephen001 · 2008-06-21 00:06:22 UTC
@@ -38,9 +36,7 @@ Attachment: [dna-add-typo-trunk.patch](attachments/dna-add-typo-trunk.patch) (51
 
 ### stephen001 · 2008-06-21 00:06:42 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 File Added: dna-add-typo-rc-1.patch
 
@@ -56,13 +52,11 @@ Attachment: [dna-add-typo-rc-1.patch](attachments/dna-add-typo-rc-1.patch) (549 
 
 ### sf-robot · 2008-07-05 02:20:17 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ### sf-robot · 2008-07-05 02:20:17 UTC · field change

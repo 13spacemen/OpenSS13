@@ -31,9 +31,7 @@ After you have achieved passive-grab, you cannot upgrade the grab to the later s
 
 ### stephen001 · 2008-06-21 23:23:25 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Not actually a bug, you aren't allowed to grab monkeys past passive, this is intentional behaviour.
 

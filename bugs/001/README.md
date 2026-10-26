@@ -19,8 +19,8 @@ I've marked this as highest priority, simply on the grounds it seems to crash Dr
 
 The original bug report from Animay is as follows:
 
-\---------------------------------------------------------
-Spawned metal from sandbox panel, when deleted \(tested using Hobnob's debug verb "delete", the metal was in my right hand\) crashed my local host server, with windows debugger coming up, actually.
+\---------------------------------------------------------\
+Spawned metal from sandbox panel, when deleted \(tested using Hobnob's debug verb "delete", the metal was in my right hand\) crashed my local host server, with windows debugger coming up, actually.\
 \---------------------------------------------------------
 
 Sandbox is a rather flaky mode, however it is reasonably popular, so temporarily removing it seems not to be a good idea. For more information on this bug, contact Animay \(his email should be available via SF\).
@@ -29,9 +29,7 @@ Sandbox is a rather flaky mode, however it is reasonably popular, so temporarily
 
 ### crushu · 2008-04-07 21:10:53 UTC
 
-Logged In: YES 
-user\_id=1947276
-Originator: NO
+*Old tracker: logged in: yes · user ID 1947276 · originator: no*
 
 Without even looking at the delete verb code, I'm betting it's because the metal is equipped to your hand. I know when looking at code for other objects which can run out, u\_equip\(\) is called on them before del\(\) is.
 
@@ -39,9 +37,7 @@ Check for whether the delete\(\) verb is unequipping before deleting.
 
 ### crushu · 2008-04-08 02:56:24 UTC
 
-Logged In: YES 
-user\_id=1947276
-Originator: NO
+*Old tracker: logged in: yes · user ID 1947276 · originator: no*
 
 Hm. Looked at the delete\(\) verb \(and there's a delete proc as well, both are category "debug", which is Odd.\) Neither check for if it's equipped. I presume that's because it assumes that you're deleting an object Not on Your Person.
 
@@ -51,9 +47,7 @@ Option 2: Don't delete stuff on yourself. Dummy. :P
 
 ### hobnob13 · 2008-04-08 07:58:39 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 I haven't been able to reproduce the bug, following the steps listed \(spawn metal in sandbox, place in right hand, delete\). It may be a matter of timing/lag - perhaps the metal got deleted halfway through some pending action, causing DS to crash.
 
@@ -65,9 +59,7 @@ Explanation of the two "delete"s - the "delete" verb is a debug verb defined in 
 
 ### stephen001 · 2008-04-08 13:08:54 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Seems we've had a number of people fail to re-create the bug, Twerty, SpeyMan, Hobnob, CrushU and Animay again.
 

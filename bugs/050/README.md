@@ -23,7 +23,7 @@ feel free to steal our fix for it, see rev446 of svn.slurm.us/public/spacestatio
 
 ### nobody · 2008-07-24 18:20:48 UTC
 
-Logged In: NO 
+*Old tracker: logged in: no*
 
 Does this really have to be fixed? I find it rather handy when I want to lockdown an area but not have the alarm flashing.
 

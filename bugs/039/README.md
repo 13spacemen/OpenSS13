@@ -21,9 +21,7 @@ Due to an update in DblClick\(\) attack\_ai\(\) was no longer called
 
 ### zjm7891 · 2008-06-25 08:08:16 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed.. created a new bug in that AI can now control everything even when not having power
 

@@ -17,10 +17,10 @@
 
 This is a pretty long-standing bug. It was supposed to be fixed before the source release, but we seem to have regressed. Once again, a report by Animay:
 
-\---------------------------------------------------------
+\---------------------------------------------------------\
 You go into a closet, before it closes click your character and drag it to a nearby closet, the closet you're in closes, then release the mouse button and you'll teleport.
 
-You can do this into walls, get out of locked lockers, and other things.
+You can do this into walls, get out of locked lockers, and other things.\
 \---------------------------------------------------------
 
 Considering how long we've had this one, it'd be nice to get it sorted out properly.
@@ -29,29 +29,25 @@ Considering how long we've had this one, it'd be nice to get it sorted out prope
 
 ### shadowlord13 · 2008-04-07 20:56:51 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 So far, I've only been able to reproduce this on closets which are only one tile away from the one I'm standing in, but that does allow teleporting through secure blue doors. However, the fact that you need an accomplice on the inside to put a closet behind the door kind of limits the possibilities for abuse.
 
 Fixing this, however, appears quite simple: When someone is in a closet, their loc is that closet, rather than a turf.
 
-So, add to /obj/closet/MouseDrop\_T\(atom/movable/O as mob|obj, mob/user as mob\):
-if \(user.loc==null\) // just in case someone manages to get a closet into the blue light dimension, as unlikely as that seems
-return
-if \(\!istype\(user.loc, /turf\)\) // are you in a container/closet/pod/etc?
+So, add to /obj/closet/MouseDrop\_T\(atom/movable/O as mob|obj, mob/user as mob\):\
+if \(user.loc==null\) // just in case someone manages to get a closet into the blue light dimension, as unlikely as that seems\
+return\
+if \(\!istype\(user.loc, /turf\)\) // are you in a container/closet/pod/etc?\
 return
 
-In my copy, I put it after the
-if \(\(\!\( istype\(O, /atom/movable\) \) || O.anchored || get\_dist\(user, src\) &gt; 1 || get\_dist\(user, O\) &gt; 1 || user.contents.Find\(src\)\)\)
+In my copy, I put it after the\
+if \(\(\!\( istype\(O, /atom/movable\) \) || O.anchored || get\_dist\(user, src\) &gt; 1 || get\_dist\(user, O\) &gt; 1 || user.contents.Find\(src\)\)\)\
 return
 
 ### stephen001 · 2008-04-07 21:12:56 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Accepted task. I'll review the patch suggested by shadowlord13.
 
@@ -65,9 +61,7 @@ Accepted task. I'll review the patch suggested by shadowlord13.
 
 ### stephen001 · 2008-04-07 22:11:55 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Seems the patch did the trick, kudos to shadowlord13.
 

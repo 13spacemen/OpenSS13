@@ -15,7 +15,7 @@
 
 ## Description
 
-This was in cryocell.dm. The dialog for the cryocell wasn't being updated
+This was in cryocell.dm. The dialog for the cryocell wasn't being updated\
 for the AI. Fixed in revision 53 on the 1.0 rc-1 branch.
 
 ## Comments (2)

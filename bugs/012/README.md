@@ -23,9 +23,7 @@ Once the cause is figured out, we should probably make sure prox/igniters and su
 
 ### shadowlord13 · 2008-05-31 18:27:33 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Fixed \(and tested to make sure the fix works\).
 

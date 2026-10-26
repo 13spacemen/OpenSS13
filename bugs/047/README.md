@@ -13,6 +13,8 @@
 | Created | 2008-07-08 05:23:08 UTC |
 | Last modified | 2008-07-10 04:32:06 UTC |
 
+> Patches pasted into the text below are missing the leading spaces and tabs of many lines; SourceForge already stores them that way. Attached `.patch` files, where there are any, are intact.
+
 ## Description
 
 In the current trunk \(as of revision 90\), the AI cannot interact with anything that requires a double click\(or single if single click is toggled\).
@@ -35,22 +37,22 @@ Attachment: [attackaifix.patch](attachments/attackaifix.patch) (29,456 bytes)
 
 ### stephen001 · 2008-07-08 05:43:35 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 I've attached a cleaned-up version of this patch. Dunno what all that random noise was about.
 
+```diff
 Index: trunk/Code/items.dm
 ===================================================================
-\--- trunk/Code/items.dm	\(revision 90\)
-+++ trunk/Code/items.dm	\(working copy\)
+--- trunk/Code/items.dm	(revision 90)
++++ trunk/Code/items.dm	(working copy)
 @@ -5859,2 +5859,4 @@
-src.hand\_p\(user, user.hand\)
-\-			
-\+				else
-\+					if \(istype\(user, /mob/ai\)\)
-\+						src.hand\_a\(user, user.hand\)
+src.hand_p(user, user.hand)
+-			
++				else
++					if (istype(user, /mob/ai))
++						src.hand_a(user, user.hand)
+```
 
 ### zjm7891 · 2008-07-10 04:32:06 UTC · field change
 

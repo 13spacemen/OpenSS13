@@ -29,9 +29,7 @@ When on the opposite side of a window, a character can move through it, into a D
 
 ### rockdtben · 2008-04-16 13:20:28 UTC
 
-Logged In: YES 
-user\_id=2058192
-Originator: NO
+*Old tracker: logged in: yes · user ID 2058192 · originator: no*
 
 This is related to mostly all the machines in med/dna areas. So ill leave this one to you Zjm
 
@@ -49,9 +47,7 @@ This is related to mostly all the machines in med/dna areas. So ill leave this o
 
 ### rockdtben · 2008-04-26 05:29:26 UTC
 
-Logged In: YES 
-user\_id=2058192
-Originator: NO
+*Old tracker: logged in: yes · user ID 2058192 · originator: no*
 
 BUG HAS BEEN MOVED TO \[ 1952091 \]
 
@@ -61,9 +57,7 @@ BUG HAS BEEN MOVED TO \[ 1952091 \]
 
 ### rockdtben · 2008-04-30 14:00:22 UTC
 
-Logged In: YES 
-user\_id=2058192
-Originator: NO
+*Old tracker: logged in: yes · user ID 2058192 · originator: no*
 
 Alright its now its own bug again. Reffler - "I've added the extra fix as mentioned by sl13 on the bugtracker \(now as rev 18\), and tested it. Everything seems to work \(you can no longer crowbar through windows\), except that you can still move into a DNA machine from the other side of the window. A closer look shows that the verb "move inside" doesn't do any kind of check for obstructions, so it's not surprising this doesn't fix it.
 
@@ -77,17 +71,13 @@ TODO: Anything you interactive with via a verb should have additional checks to 
 
 ### anichowy · 2008-05-01 19:21:10 UTC
 
-Logged In: YES 
-user\_id=2056389
-Originator: NO
+*Old tracker: logged in: yes · user ID 2056389 · originator: no*
 
 Windows are extremely buggy, I wouldn't be surprised to see more bug reports involving windows.
 
 ### shadowlord13 · 2008-05-25 05:48:31 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 You can also escape into shuttlepods, by the way, which brings us to one way to exploit this: If welded inside a locker, and all welders have been stashed somewhere inaccessible \(say, an ID-locked locker\), an associate can still free you by simply tearing up floor tiles and driving a shuttlepod up to your locker. You then just use the pod's board verb, and poof, you're in the pod instead of the closet.
 
@@ -99,19 +89,15 @@ This is only semi-related, since it's not a verb, but you can also drag a locker
 
 ### stephen001 · 2008-06-06 02:56:51 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 You're going to get the problem with both move\_inside and attackby \(the way of forcibly putting someone in\). What we really need is some kind of utility proc that properly works out if you can 'touch' the given atom. Presumably some code from DblClick could be broken up to serve this purpose, cleaning up DblClick a bit too.
 
 ### stephen001 · 2008-06-21 01:00:25 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
-Attached are patches for RC 1 and the trunk, to fix this for the DNA Scanner and DNA Physical Reconstruction Accelerator. Fortunately shadowlord13's funny commit of canReach into RC1 makes this easy to fix in RC 1.
+Attached are patches for RC 1 and the trunk, to fix this for the DNA Scanner and DNA Physical Reconstruction Accelerator. Fortunately shadowlord13's funny commit of canReach into RC1 makes this easy to fix in RC 1.\
 File Added: dna-scanner-restruct-canreach-rc-1.patch
 
 ### stephen001 · 2008-06-21 01:00:25 UTC
@@ -128,20 +114,16 @@ Attachment: [dna-scanner-restruct-canreach-trunk.patch](attachments/dna-scanner-
 
 ### stephen001 · 2008-06-21 01:01:59 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
-Here's the trunk patch, see previous comment. Both have been applied, bringig us to revision 64.
+Here's the trunk patch, see previous comment. Both have been applied, bringig us to revision 64.\
 File Added: dna-scanner-restruct-canreach-trunk.patch
 
 ### stephen001 · 2008-06-21 02:02:31 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
-Adding patchfile for RC 1, for cryocells.
+Adding patchfile for RC 1, for cryocells.\
 File Added: cryocell-canreach-rc1.patch
 
 ### stephen001 · 2008-06-21 02:02:31 UTC
@@ -158,11 +140,9 @@ Attachment: [cryocell-canreach-trunk.patch](attachments/cryocell-canreach-trunk.
 
 ### stephen001 · 2008-06-21 02:03:02 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
-Adding patchfile for trunk, for cryocells.
+Adding patchfile for trunk, for cryocells.\
 File Added: cryocell-canreach-trunk.patch
 
 ### stephen001 · 2008-06-21 22:13:00 UTC · field change
@@ -171,13 +151,11 @@ File Added: cryocell-canreach-trunk.patch
 
 ### sf-robot · 2008-07-06 02:20:21 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ### sf-robot · 2008-07-06 02:20:21 UTC · field change

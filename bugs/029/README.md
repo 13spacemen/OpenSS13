@@ -21,9 +21,7 @@ This is in camera.dm: When the camera is disconnected, it doesn't kick out viewe
 
 ### shadowlord13 · 2008-06-15 03:44:32 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 I've put a fix on svn, but the fix needs to be tested \(needs two people - someone to watch through the camera and someone else to disconnect it with wirecutters\) before this gets marked fixed.
 
@@ -38,13 +36,11 @@ I've put a fix on svn, but the fix needs to be tested \(needs two people - someo
 
 ### sf-robot · 2008-07-06 02:20:20 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ### sf-robot · 2008-07-06 02:20:20 UTC · field change

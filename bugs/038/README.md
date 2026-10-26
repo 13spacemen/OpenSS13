@@ -23,9 +23,7 @@ I will post more on request...
 
 ### zjm7891 · 2008-06-22 09:01:09 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 Please do further explain how this is a bug?  Perhaps if you'd prefer, Zach.McNaney AT Gmail.com
 
@@ -35,9 +33,7 @@ Please do further explain how this is a bug?  Perhaps if you'd prefer, Zach.McNa
 
 ### zjm7891 · 2008-06-29 06:20:31 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 While, you can using the myspace javascript exploit make memory use javascript.  That javascript won't affect the server in any manor.  I'm marking it as not a bug.
 
@@ -48,9 +44,7 @@ While, you can using the myspace javascript exploit make memory use javascript. 
 
 ### zjm7891 · 2008-06-29 06:36:13 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 The way to fix this bug is to replace All HTML windows with interface windows.  This bug has been postponed till a later date when it can be impletmented \(after the code freeze\)  It will be fixed by the next major release after 1.0 .
 
@@ -75,13 +69,11 @@ The way to fix this bug is to replace All HTML windows with interface windows.  
 
 ### sf-robot · 2008-07-14 02:20:17 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ## Commits that cite this ticket

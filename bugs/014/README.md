@@ -29,9 +29,7 @@ The dialog for take/off or put/on on a syndicate operative reportedly cannot be 
 
 ### stephen001 · 2008-06-07 00:45:15 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 Duplicate of Bug \#1986988. My fault for not checking.
 

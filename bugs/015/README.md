@@ -29,9 +29,7 @@ The take-off/put-on messages are frequently incorrect. For example, if you try t
 
 ### zjm7891 · 2008-07-08 14:30:24 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 Fixed in Rev 93
 

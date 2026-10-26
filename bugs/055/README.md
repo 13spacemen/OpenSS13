@@ -19,11 +19,11 @@ Firstly, this fix fixes the limited ability to add your own closets to the code.
 
 Now it is possible to add new 'closet' items with custom open icons by adding it like this:
 
-/obj/closet/coffin
-desc = "It's a coffin."
-name = "Coffin"
-icon\_state="coffin"
-original="coffin"
+/obj/closet/coffin\
+desc = "It's a coffin."\
+name = "Coffin"\
+icon\_state="coffin"\
+original="coffin"\
 orig\_closed = "coffino"
 
 And as the code would suggest, I have also added in a coffin to replace the default 'closet' that has been used as coffins for an age. The patch also adds two icons - a coffin and coffin open icon \('coffin' and 'coffino'\) to stationobjs.dmi.

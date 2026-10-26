@@ -17,8 +17,8 @@
 
 I wish I could provide more information on this, but once again, this was originally one of Animay's reports:
 
-\---------------------------------------------------------
-Monkeys can talk while sleeping \(injected with sleep toxins\).
+\---------------------------------------------------------\
+Monkeys can talk while sleeping \(injected with sleep toxins\).\
 \---------------------------------------------------------
 
 Not exactly a major issue, but probably not the first we've experienced with the communication code.

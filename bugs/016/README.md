@@ -33,9 +33,7 @@ The best thing to do would be to just check all verbs. Some already check stat \
 
 ### stephen001 · 2008-06-21 23:42:05 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 This should be remedied by a refactor.
 
@@ -45,9 +43,7 @@ This should be remedied by a refactor.
 
 ### shadowlord13 · 2008-06-21 23:48:04 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 This is already fixed in the trunk for most verbs, since they use canReach, and it checks stat. The rest of the verbs should probably have a stat check added to them still.
 
@@ -62,9 +58,7 @@ This is already fixed in the trunk for most verbs, since they use canReach, and 
 
 ### zjm7891 · 2008-07-08 15:25:12 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 Fixed in Rev 95 as a cheap fix.  Trunk has the proper fix.
 

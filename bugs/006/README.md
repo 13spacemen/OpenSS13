@@ -15,7 +15,7 @@
 
 ## Description
 
-Prison Station floor tiles apparently allow you to attack 
+Prison Station floor tiles apparently allow you to attack \
 the floor through an interior door.
 
 Tested with a medi-kit using my left hand.
@@ -24,9 +24,7 @@ Tested with a medi-kit using my left hand.
 
 ### shadowlord13 · 2008-04-08 04:30:15 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 Hmm. Duplicated here, except - It appears to be possible to attack tiles through all blue doors, as well as through all windows - not just ones on the prison station \(e.g. try a crowbar on floor tiles with a window in the way\). 
 
@@ -50,17 +48,13 @@ Checking whether you could move onto the tile would probably work as a fix, exce
 
 ### rockdtben · 2008-04-26 05:28:41 UTC
 
-Logged In: YES 
-user\_id=2058192
-Originator: NO
+*Old tracker: logged in: yes · user ID 2058192 · originator: no*
 
 BUG HAS BEEN MOVED TO \[ 1952091 \]
 
 ### rockdtben · 2008-04-26 05:28:59 UTC
 
-Logged In: YES 
-user\_id=2058192
-Originator: NO
+*Old tracker: logged in: yes · user ID 2058192 · originator: no*
 
 BUG HAS BEEN MOVED TO \[ 1952091 \]
 

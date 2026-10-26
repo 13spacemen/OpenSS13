@@ -15,24 +15,20 @@
 
 ## Description
 
-Uncovering the CC floor icon floor tiles in medbay and using the tiles you get to make another floor makes a normal floor, not the CC floor that was originally there.
+Uncovering the CC floor icon floor tiles in medbay and using the tiles you get to make another floor makes a normal floor, not the CC floor that was originally there.\
 \-- Animay
 
 ## Comments (3)
 
 ### shadowlord13 · 2008-06-21 03:46:18 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: NO
+*Old tracker: logged in: yes · user ID 365542 · originator: no*
 
 I'd consider this relatively minor, say, a priority around 1 or 2 at most.
 
 ### stephen001 · 2008-06-21 23:29:12 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 This will be fixed by the refactor, stupid floor tile code.
 

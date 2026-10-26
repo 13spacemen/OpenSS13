@@ -21,9 +21,7 @@ There are a number of places where 'restabalizing' is written - it probably ough
 
 ### shadowlord13 · 2008-06-14 22:15:02 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Fixed \(shuttle.dm, prision\_shuttle.dm \(SIC\)\)
 

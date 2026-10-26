@@ -21,9 +21,7 @@ This one should be pretty simple, spawning 50 glass through the admin sandbox pa
 
 ### stephen001 · 2008-04-07 23:25:05 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Simple typo, fixed.
 

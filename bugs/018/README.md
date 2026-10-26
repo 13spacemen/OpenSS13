@@ -23,9 +23,7 @@ Everywhere else uses rank numbers, and the rank strings there probably don't mat
 
 ### shadowlord13 · 2008-06-07 02:51:13 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 Should be fixed in revision 43 \(should probably be tested just in case, even though it was a rather small change\).
 
@@ -42,11 +40,9 @@ Attachment: [admin-positions.patch](attachments/admin-positions.patch) (14,605 b
 
 ### stephen001 · 2008-06-09 00:17:11 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
-Attached patch for 1.0 RC 1. I'll patch the trunk.
+Attached patch for 1.0 RC 1. I'll patch the trunk.\
 File Added: admin-positions.patch
 
 ### stephen001 · 2008-06-17 21:46:29 UTC · field change

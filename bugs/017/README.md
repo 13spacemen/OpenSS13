@@ -37,11 +37,9 @@ Attachment: [inventory-window-name.patch](attachments/inventory-window-name.patc
 
 ### stephen001 · 2008-06-07 00:27:10 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
-Fixed as of revision 38. Added html\_encode to src.name where relevant, making the name HTML safe.
+Fixed as of revision 38. Added html\_encode to src.name where relevant, making the name HTML safe.\
 File Added: inventory-window-name.patch
 
 ### stephen001 · 2008-06-07 00:45:28 UTC · field change
@@ -54,9 +52,7 @@ File Added: inventory-window-name.patch
 
 ### stephen001 · 2008-06-08 21:36:11 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: YES
+*Old tracker: logged in: yes · user ID 1640007 · originator: yes*
 
 Made a change for 1.0 RC 1 revision 51 and trunk revision 52. We should've been using url\_encode.
 

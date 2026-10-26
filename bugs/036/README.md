@@ -15,14 +15,14 @@
 
 ## Description
 
-About the method of meteor chance that we're currently using \(which is better than the previous one, but still isn't perfect\):
-&lt;Kurper&gt; Trafalgar: it seems like that only works right if config.meteorchance is a divisor of 100
-&lt;Kurper&gt; because rand\(\) also only works with integers
-&lt;Kurper&gt; it still works mostly right if meteorchance is not a divisor
-&lt;Kurper&gt; but the probabilities would be off
-&lt;Kurper&gt; if config.meteorchance is 75 then it would always spawn them
-&lt;Kurper&gt; as an extreme example
-&lt;Trafalgar&gt; The damn byond dm reference docs don't help
+About the method of meteor chance that we're currently using \(which is better than the previous one, but still isn't perfect\):\
+&lt;Kurper&gt; Trafalgar: it seems like that only works right if config.meteorchance is a divisor of 100\
+&lt;Kurper&gt; because rand\(\) also only works with integers\
+&lt;Kurper&gt; it still works mostly right if meteorchance is not a divisor\
+&lt;Kurper&gt; but the probabilities would be off\
+&lt;Kurper&gt; if config.meteorchance is 75 then it would always spawn them\
+&lt;Kurper&gt; as an extreme example\
+&lt;Trafalgar&gt; The damn byond dm reference docs don't help\
 &lt;Trafalgar&gt; They don't say what inputs the functions accept or don't
 
 The solution we came to, which will need to be implemented: Take the chosen chance, multiply times 100. Each tick, do rand\(10000\), compare the result to the pre-multiplied chance. This gives us have a chance with a precision of 0.01 percent points everywhere, which should be more than sufficient.
@@ -31,17 +31,13 @@ The solution we came to, which will need to be implemented: Take the chosen chan
 
 ### shadowlord13 · 2008-06-21 06:49:20 UTC
 
-Logged In: YES 
-user\_id=365542
-Originator: YES
+*Old tracker: logged in: yes · user ID 365542 · originator: yes*
 
 \(This bug is for both the trunk and rc branch.\)
 
 ### kurper · 2008-06-22 18:46:19 UTC
 
-Logged In: YES 
-user\_id=1978724
-Originator: NO
+*Old tracker: logged in: yes · user ID 1978724 · originator: no*
 
 Actually, it turns out that rand\(\) returns a random float between 0 and 1 if you call it with no arguments, so that'd be a better way than having an arbitrary cutoff precision \(and probably less processor-intensive, too\).
 
@@ -51,9 +47,7 @@ Actually, it turns out that rand\(\) returns a random float between 0 and 1 if y
 
 ### zjm7891 · 2008-07-08 15:31:28 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 I need to look further into it.  As of the moment, I don't see the problem causing this.  I'll check back with you guys later
 
@@ -72,13 +66,11 @@ I need to look further into it.  As of the moment, I don't see the problem causi
 
 ### sf-robot · 2008-07-23 02:20:27 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ## Commits that cite this ticket

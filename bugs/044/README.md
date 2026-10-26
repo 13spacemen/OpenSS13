@@ -21,9 +21,7 @@ Sandbox panel is not accessable to AI, which when an admin wants to turn on/off 
 
 ### zjm7891 · 2008-06-28 09:52:09 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed as of REV 90.  All admins now have the admin panel at all times.
 

@@ -15,17 +15,17 @@
 
 ## Description
 
-runtime error: Cannot modify null.start.
-proc name: New \(/obj/ctf\_assist/New\)
-usr: null
-src: the ctf assist \(/obj/ctf\_assist\)
-call stack:
-the ctf assist \(/obj/ctf\_assist\): New\(\)
-show ctf\(\)
-Capture the Flag Mode activated\!
+runtime error: Cannot modify null.start.\
+proc name: New \(/obj/ctf\_assist/New\)\
+usr: null\
+src: the ctf assist \(/obj/ctf\_assist\)\
+call stack:\
+the ctf assist \(/obj/ctf\_assist\): New\(\)\
+show ctf\(\)\
+Capture the Flag Mode activated\!\
 The game start has been frozen to accomodate\!
 
-This happens when you start CTF after someone has readied.
+This happens when you start CTF after someone has readied.\
 The result: Crash.
 
 ## Comments (2)
@@ -36,9 +36,7 @@ The result: Crash.
 
 ### zjm7891 · 2008-06-28 08:14:45 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed in Revision 88 due to Animay's bugfix
 

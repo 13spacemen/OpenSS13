@@ -17,16 +17,16 @@
 
 "/mob/verb/ooc\(msg as text\)
 
-if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]"
-msg = cleanstring\(msg\)
-msg = html\_encode\(copytext\(msg, 1, 128\)\)
-if \(\!\( msg \)\)
-return
-if \(\(ooc\_allowed && \!\( src.muted \)\)\)
-for\(var/mob/M in world\)
-if \(\(M.client && M.client.listen\_ooc\)\)
-M &lt;&lt; text\("&lt;B&gt;OOC: \[\]&lt;/B&gt;: \[\]", src.key, msg\)
-//Foreach goto\(54\)
+if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]"\
+msg = cleanstring\(msg\)\
+msg = html\_encode\(copytext\(msg, 1, 128\)\)\
+if \(\!\( msg \)\)\
+return\
+if \(\(ooc\_allowed && \!\( src.muted \)\)\)\
+for\(var/mob/M in world\)\
+if \(\(M.client && M.client.listen\_ooc\)\)\
+M &lt;&lt; text\("&lt;B&gt;OOC: \[\]&lt;/B&gt;: \[\]", src.key, msg\)\
+//Foreach goto\(54\)\
 return"
 
 When it submits it to the world log, OOC isn't cut down to prevent spam, long strings of text could be sent into the dream daemon/seeker and could lag the server severely\!
@@ -35,7 +35,7 @@ Fix\!
 
 Example:
 
-Set a macro to:
+Set a macro to:\
 ooc "AHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH\(repeat like 400 more times\)
 
 use it on repeat,
@@ -48,53 +48,43 @@ This crashes servers and people are abusing it\!
 
 ### anichowy · 2008-05-17 05:52:34 UTC
 
-Logged In: YES 
-user\_id=2056389
-Originator: YES
+*Old tracker: logged in: yes · user ID 2056389 · originator: yes*
 
-"if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]"
+"if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]"\
 msg = cleanstring\(msg\)"
 
 
 Should be
 
 
-"msg = cleanstring\(msg\)
+"msg = cleanstring\(msg\)\
 if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]"
 
 ### anichowy · 2008-05-17 05:53:40 UTC
 
-Logged In: YES 
-user\_id=2056389
-Originator: YES
+*Old tracker: logged in: yes · user ID 2056389 · originator: yes*
 
-And
-msg = html\_encode\(copytext\(msg, 1, 128\)\)
-should be before
-if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]
+And\
+msg = html\_encode\(copytext\(msg, 1, 128\)\)\
+should be before\
+if\(config.logooc\) world.log &lt;&lt; "OOC: \[src.name\]/\[src.key\] : \[msg\]\
 as well.
 
 ### anichowy · 2008-05-17 05:59:19 UTC
 
-Logged In: YES 
-user\_id=2056389
-Originator: YES
+*Old tracker: logged in: yes · user ID 2056389 · originator: yes*
 
 Important Note: You have to do this for every logging thing, like say.
 
 ### anichowy · 2008-05-17 06:05:04 UTC
 
-Logged In: YES 
-user\_id=2056389
-Originator: YES
+*Old tracker: logged in: yes · user ID 2056389 · originator: yes*
 
 and, I haven't fixed anything.
 
 ### stephen001 · 2008-05-23 18:10:02 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 I've moved the logging for both say and OOC to be much later in the verb. It should take into account stuff like muted status now, too. OOC is probably okay, not 100% on say though, I'd like that tested further.
 

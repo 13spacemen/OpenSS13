@@ -17,28 +17,26 @@
 
 Had this show up in the console \(repeatedly spammed until Dream Daemon cut off exception messages\) during a Blob game.
 
-runtime error: Cannot execute null.get node dirs\(\).
-proc name: leak to turf \(/obj/machinery/pipeline/proc/leak\_to\_turf\)
-source file: newpipe.dm,141
-usr: null
-src: the pipeline \#5 \(/obj/machinery/pipeline\)
-call stack:
-the pipeline \#5 \(/obj/machinery/pipeline\): leak to turf\(2\)
-the pipeline \#5 \(/obj/machinery/pipeline\): process\(\)
-/datum/control/cellular \(/datum/control/cellular\): process\(\)
+runtime error: Cannot execute null.get node dirs\(\).\
+proc name: leak to turf \(/obj/machinery/pipeline/proc/leak\_to\_turf\)\
+source file: newpipe.dm,141\
+usr: null\
+src: the pipeline \#5 \(/obj/machinery/pipeline\)\
+call stack:\
+the pipeline \#5 \(/obj/machinery/pipeline\): leak to turf\(2\)\
+the pipeline \#5 \(/obj/machinery/pipeline\): process\(\)\
+/datum/control/cellular \(/datum/control/cellular\): process\(\)\
 : New\(\)
 
 ## Comments (7)
 
 ### hobnob13 · 2008-04-12 17:55:58 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 Probably caused by deletion of an obj/machinery/pipes object \(by blob or by an explosion\). Currently pipelines don't handle this properly.
 
-This bug should be fixed when proper handling of pipe construction/damage/destruction is implemented. I am working on
+This bug should be fixed when proper handling of pipe construction/damage/destruction is implemented. I am working on\
 this at the moment.
 
 ### rockdtben · 2008-04-16 13:24:08 UTC · field change
@@ -47,9 +45,7 @@ this at the moment.
 
 ### stephen001 · 2008-06-04 04:47:37 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 This will be reviewed and hopefully sorted for version 2.
 
@@ -67,13 +63,11 @@ This will be reviewed and hopefully sorted for version 2.
 
 ### sf-robot · 2008-06-19 02:20:04 UTC
 
-Logged In: YES 
-user\_id=1312539
-Originator: NO
+*Old tracker: logged in: yes · user ID 1312539 · originator: no*
 
-This Tracker item was closed automatically by the system. It was
-previously set to a Pending status, and the original submitter
-did not respond within 14 days \(the time period specified by
+This Tracker item was closed automatically by the system. It was\
+previously set to a Pending status, and the original submitter\
+did not respond within 14 days \(the time period specified by\
 the administrator of this Tracker\).
 
 ## Commits that cite this ticket

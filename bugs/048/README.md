@@ -25,9 +25,7 @@ If an APC doesn't have any power, when the user tries to add the powercell, atta
 
 ### zjm7891 · 2008-07-08 11:45:20 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed in Rev 91.
 

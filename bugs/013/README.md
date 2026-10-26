@@ -35,17 +35,13 @@ If you throw a lit welder into plasma, it also does not ignite.
 
 ### hobnob13 · 2008-06-25 17:07:39 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 Fixed in revision 80 of RC2.
 
 ### hobnob13 · 2008-06-26 03:03:02 UTC
 
-Logged In: YES 
-user\_id=2047692
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047692 · originator: no*
 
 Oops, make that fixed in revn 83, since I forgot to add the new code file.
 
@@ -55,9 +51,7 @@ Oops, make that fixed in revn 83, since I forgot to add the new code file.
 
 ### zjm7891 · 2008-06-27 23:05:01 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: NO
+*Old tracker: logged in: yes · user ID 2047617 · originator: no*
 
 Tested and fixed\! Thanks Hobnob\!
 

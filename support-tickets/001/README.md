@@ -21,15 +21,13 @@ I just want to host it and learn how to code it
 
 ### stephen001 · 2008-07-05 21:47:13 UTC
 
-Logged In: YES 
-user\_id=1640007
-Originator: NO
+*Old tracker: logged in: yes · user ID 1640007 · originator: no*
 
 This is not a bug, it's a support issue. Could a suitable Project member move it accordingly.
 
 You will find a pre-compiled package for 1.0 RC 2 on the SS13.net forum, here: http://forums.ss13.net/index.php/topic,8690.0.html
 
-As for working with the OpenSS13 codebase, do you just wish to add stuff for your own private ends, or will you be trying to contribute to OpenSS13?
+As for working with the OpenSS13 codebase, do you just wish to add stuff for your own private ends, or will you be trying to contribute to OpenSS13?\
 I would recommend holding off actually attempting to add to the code itself until after Sunday 6th July, when the Project Lead, ZJM, intends to release 1.0 proper.
 
 ### zjm7891 · 2008-07-08 05:18:55 UTC · field change

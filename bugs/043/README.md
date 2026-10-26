@@ -27,9 +27,7 @@ Its just a matter of adding some special conditions to the movement system.
 
 ### zjm7891 · 2008-07-08 12:11:00 UTC
 
-Logged In: YES 
-user\_id=2047617
-Originator: YES
+*Old tracker: logged in: yes · user ID 2047617 · originator: yes*
 
 Fixed in Rev 92
 
