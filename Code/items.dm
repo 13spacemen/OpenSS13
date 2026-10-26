@@ -312,7 +312,7 @@
 		user.machine = src
 		if (!( src.data ))
 			update()
-		user.client_mob() << browse(src.data, "window=game_kit")
+		user.client_mob() << browse(HTML_SKELETON(src.data), "window=game_kit")
 		return
 	return
 
@@ -916,7 +916,7 @@
 		dat = text("[]<BR><BR><A href='?src=\ref[];temp=1'>Clear</A>", src.temp, src)
 	else
 		dat = text("<B>Persistent Signal Locator</B><HR>\nFrequency: <A href='?src=\ref[];freq=-1'>-</A><A href='?src=\ref[];freq=-0.2'>-</A> [] <A href='?src=\ref[];freq=0.2'>+</A><A href='?src=\ref[];freq=1'>+</A><BR>\n<A href='?src=\ref[];refresh=1'>Refresh</A>", src, src, src.freq, src, src, src)
-	user.client_mob() << browse(dat, "window=radio")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=radio")
 	return
 
 /obj/item/weapon/locator/Topic(href, href_list)
@@ -1022,7 +1022,7 @@
 			dat = text("[]<BR><BR><A href='?src=\ref[];temp=1'>Clear</A>", src.temp, src)
 		else
 			dat = text("<B>Syndicate Uplink Console:</B><HR>\nTele-Crystals left: []<BR>\n<B>Request item:</B> (uses 1 tele-crystal)<BR>\n<A href='?src=\ref[];item_emag=1'>Electromagnet Card</A><BR>\n<A href='?src=\ref[];item_sleepypen=1'>Sleepy Pen</A><BR>\n<A href='?src=\ref[];item_cyanide=1'>Cyanide Pill</A><BR>\n<A href='?src=\ref[];item_cloak=1'>Cloaking Device</A><BR>\n<A href='?src=\ref[];item_revolver=1'>Revolver</A><BR>\n<A href='?src=\ref[];item_imp_freedom=1'>Implant- Freedom (with injector)</A><BR>\n<HR>\n<A href='?src=\ref[];selfdestruct=1'>Self-Destruct</A>", src.uses, src, src, src, src, src, src, src)
-	user.client_mob() << browse(dat, "window=radio")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=radio")
 	return
 
 /obj/item/weapon/syndicate_uplink/Topic(href, href_list)
@@ -2314,7 +2314,7 @@
 		dat += text("<A href='?src=\ref[];pen=1'>Remove Pen</A><BR><HR>", src)
 	for(var/obj/item/weapon/paper/P in src)
 		dat += text("<A href='?src=\ref[];read=\ref[]'>[]</A> <A href='?src=\ref[];write=\ref[]'>Write</A> <A href='?src=\ref[];remove=\ref[]'>Remove</A><BR>", src, P, P.name, src, P, src, P)
-	user.client_mob() << browse(dat, "window=clipboard")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=clipboard")
 	return
 
 /obj/item/weapon/clipboard/Topic(href, href_list)
@@ -2449,7 +2449,7 @@
 	var/dat = "<B>Clipboard</B><BR>"
 	for(var/obj/item/weapon/f_card/P in src)
 		dat += text("<A href='?src=\ref[];read=\ref[]'>[]</A> <A href='?src=\ref[];remove=\ref[]'>Remove</A><BR>", src, P, P.name, src, P)
-	user.client_mob() << browse(dat, "window=fcardholder")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=fcardholder")
 	return
 
 /obj/item/weapon/fcardholder/Topic(href, href_list)
@@ -3893,7 +3893,7 @@
 		return
 	user.machine = src
 	var/dat = text("<TT><A href='?src=\ref[];power=1'>[]</A><BR>\n<B>Frequency/Code</B> for electropack:<BR>\nFrequency: <A href='?src=\ref[];freq=-1'>-</A><A href='?src=\ref[];freq=-0.2'>-</A> [] <A href='?src=\ref[];freq=0.2'>+</A><A href='?src=\ref[];freq=1'>+</A><BR>\nCode: <A href='?src=\ref[];code=-5'>-</A><A href='?src=\ref[];code=-1'>-</A> [] <A href='?src=\ref[];code=1'>+</A><A href='?src=\ref[];code=5'>+</A><BR>\n</TT>", src, (src.on ? "Turn Off" : "Turn On"), src, src, src.freq, src, src, src, src, src.code, src, src)
-	user.client_mob() << browse(dat, "window=radio")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=radio")
 	return
 
 /obj/item/weapon/radio/proc/accept_rad(obj/item/weapon/radio/R, message)
@@ -4000,7 +4000,7 @@
 	else
 		t1 = "-------"
 	var/dat = text("<TT>Speaker: []<BR>\n<A href='?src=\ref[];send=1'>Send Signal</A><BR>\n<B>Frequency/Code</B> for signaler:<BR>\nFrequency: <A href='?src=\ref[];freq=-1'>-</A><A href='?src=\ref[];freq=-0.2'>-</A> [] <A href='?src=\ref[];freq=0.2'>+</A><A href='?src=\ref[];freq=1'>+</A><BR>\nCode: <A href='?src=\ref[];code=-5'>-</A><A href='?src=\ref[];code=-1'>-</A> [] <A href='?src=\ref[];code=1'>+</A><A href='?src=\ref[];code=5'>+</A><BR>\n[]</TT>", (src.listening ? text("<A href='?src=\ref[];listen=0'>Engaged</A>", src) : text("<A href='?src=\ref[];listen=1'>Disengaged</A>", src)), src, src, src, src.freq, src, src, src, src, src.code, src, src, t1)
-	user.client_mob() << browse(dat, "window=radio")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=radio")
 	return
 
 /obj/item/weapon/radio/signaler/hear_talk()
@@ -4174,7 +4174,7 @@
 	else
 		t1 = "-------"
 	var/dat = text("<TT>Microphone: []<BR>\nSpeaker: []<BR>\nFrequency: <A href='?src=\ref[];freq=-1'>-</A><A href='?src=\ref[];freq=-0.2'>-</A> [] <A href='?src=\ref[];freq=0.2'>+</A><A href='?src=\ref[];freq=1'>+</A><BR>\n[]</TT>", (src.broadcasting ? text("<A href='?src=\ref[];talk=0'>Engaged</A>", src) : text("<A href='?src=\ref[];talk=1'>Disengaged</A>", src)), (src.listening ? text("<A href='?src=\ref[];listen=0'>Engaged</A>", src) : text("<A href='?src=\ref[];listen=1'>Disengaged</A>", src)), src, src, src.freq, src, src, t1)
-	user.client_mob() << browse(dat, "window=radio")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=radio")
 	return
 
 /obj/item/weapon/radio/Topic(href, href_list)
@@ -4569,7 +4569,7 @@
 			dat += "The implant casing is empty."
 	else
 		dat += "Please insert an implant casing!"
-	user.client_mob() << browse(dat, "window=implantpad")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=implantpad")
 	return
 
 /obj/item/weapon/implantpad/Topic(href, href_list)

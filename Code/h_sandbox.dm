@@ -44,7 +44,7 @@ datum/hSB
 				hsbpanel += "- <a href=\"?\ref[src];hsb=[T]\">[hrefs[T]]</a><br>"
 			if(hsboxspawn)
 				hsbpanel += "- <a href=\"?\ref[src];hsb=hsbobj\">Spawn Object</a><br><br>"
-			usr.client_mob() << browse(hsbpanel, "window=hsbpanel")
+			usr.client_mob() << browse(HTML_SKELETON(hsbpanel), "window=hsbpanel")
 	Topic(href, href_list)
 		if(!(src.owner == usr.ckey)) return
 		if(href_list["hsb"])

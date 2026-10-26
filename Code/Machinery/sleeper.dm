@@ -277,7 +277,7 @@ obj/machinery/computer/sleep_console
 			else
 				dat += "The sleeper is empty."
 			dat += "<BR><BR><A href='?src=\ref[user];mach_close=sleeper'>Close</A>"
-			user.client_mob() << browse(dat, "window=sleeper;size=400x500")
+			user.client_mob() << browse(HTML_SKELETON(dat), "window=sleeper;size=400x500")
 
 
 	// Handle topic links from interaction window

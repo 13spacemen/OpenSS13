@@ -90,7 +90,7 @@
 		dat += text("\t[] ([])\n", M.rname, M.key)
 	dat += text("Base: \t<A href='?src=\ref[];base=1'>[]</A>\nColor: \t<A href='?src=\ref[];color=1'>[]</A>\n\n<A href='?src=\ref[];nothing=1'>Refresh</A>", src, src.base, src, src.color, src)
 	dat += "</PRE>"
-	user.client_mob() << browse(dat, "window=ctf_team")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=ctf_team")
 	return
 
 /obj/team/Topic(href, href_list)
@@ -209,7 +209,7 @@
 	dat += text("<B>Players (per Team): []</B><BR>\n<B>\"Please Pick a Player</B><BR>", src.play_team)
 	for(var/mob/human/H in src.players_left)
 		dat += text("<A href='?src=\ref[];pick=\ref[]'>[] ([])</A><BR>", src, H, H.rname, H.key)
-	user.client_mob() << browse(dat, "window=ctf_pick")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=ctf_pick")
 	return
 
 /obj/ctf_assist/proc/get_team(captain as mob)
@@ -265,7 +265,7 @@
 				dat += text("\t<A href='?src=\ref[];team=\ref[]'>No Captain</A>\n", src, O)
 	dat += text("<A href='?src=\ref[];add_team=1'>\[Add Team\]</A>\n<A href='?src=\ref[];select_team=1'>Captains Select Members</A>\n\n<A href='?src=\ref[];start=1'>Start the Game (and Set up Map)</A>\n\n<B>Win Options: []</B>\n<A href='?src=\ref[];win=collect'>Collection</A> - All flags same color on clipboard\n<A href='?src=\ref[];win=convert'>Conversion</A> - All flags same color\n<A href='?src=\ref[];win=none'>None</A>\n\n<B>Other Options:</B>\nAuto-Dress (Teams): <A href='?src=\ref[];autodress=1'>[]</A>\nRemove Engine Ejection: <A href='?src=\ref[];ejectengine=1'>[]</A>\nPaint Cans: <A href='?src=\ref[];paint_cans=1'>[]</A>\nImmobile flags (Territory): <A href='?src=\ref[];immobile=1'>[]</A>\nAdd Neutral Flags to Unused Bases: <A href='?src=\ref[];neutral_replace=1'>[]</A>\n\n<A href='?src=\ref[];nothing=1'>Refresh</A>", src, src, src, src.wintype, src, src, src, src, (src.autodress ? "Yes" : "No"), src, (src.ejectengine ? "Yes" : "No"), src, (src.paint_cans ? "Yes" : "No"), src, (src.immobile ? "Yes" : "No"), src, (src.neutral_replace ? "Yes" : "No"), src)
 	dat += "</PRE>"
-	user.client_mob() << browse(dat, "window=ctf_assist")
+	user.client_mob() << browse(HTML_SKELETON(dat), "window=ctf_assist")
 	return
 
 /obj/ctf_assist/Topic(href, href_list)
@@ -534,7 +534,7 @@
 			var/dat = "<B>Boot Player:</B><HR>"
 			for(var/mob/M in world)
 				dat += text("<A href='?src=\ref[];boot2=\ref[]'>N:[] R:[] (K:[]) (IP:[])</A><BR>", src, M, M.name, M.rname, (M.client ? M.client : M.lastKnownCKey? "Formerly [M.lastKnownCKey]" : "No Client"), M.lastKnownIP)
-			usr << browse(dat, "window=boot")
+			usr << browse(HTML_SKELETON(dat), "window=boot")
 	if (href_list["boot2"])
 		if (src.a_level >= 4)
 			var/mob/M = locate(href_list["boot2"])
@@ -553,7 +553,7 @@
 			dat += "<HR><B>Unban Player:</B><HR>"
 			for(var/t in banned)
 				dat += text("<A href='?src=\ref[];unban2=[]'>K: []</A><BR>", src, ckey(t), t)
-			usr << browse(dat, "window=ban")
+			usr << browse(HTML_SKELETON(dat), "window=ban")
 	if (href_list["ban2"])
 		if (src.a_level >= 4)
 			var/mob/M = locate(href_list["ban2"])
@@ -576,7 +576,7 @@
 			var/dat = "<B>Mute/Unmute Player:</B><HR>"
 			for(var/mob/M in world)
 				dat += text("<A href='?src=\ref[];mute2=\ref[]'>N:[] R:[] (K:[]) (IP: []) \[[]\]</A><BR>", src, M, M.name, M.rname, (M.client ? M.client : M.lastKnownCKey? "Formerly [M.lastKnownCKey]" : "No Client"), M.lastKnownIP, (M.muted ? "Muted" : "Voiced"))
-			usr << browse(dat, "window=mute")
+			usr << browse(HTML_SKELETON(dat), "window=mute")
 	if (href_list["mute2"])
 		if (src.a_level >= 4)
 			var/mob/M = locate(href_list["mute2"])
@@ -589,7 +589,7 @@
 	if (href_list["restart"])
 		if (src.a_level >= 2)
 			var/dat = text("<B>Restart game?</B><HR>\n<BR>\n<A href='?src=\ref[];restart2=1'>Yes</A>\n", src)
-			usr << browse(dat, "window=restart")
+			usr << browse(HTML_SKELETON(dat), "window=restart")
 	if (href_list["restart2"])
 		if (src.a_level >= 2)
 			world << text("\red <B> Restarting world!</B>\blue  Initiated by []!", usr.key)
@@ -608,7 +608,7 @@
 			if (ticker)
 				return alert(usr, "The game has already started.", null, null, null, null)
 			var/dat = text("<B>What mode do you wish to play?</B><HR>\n<A href='?src=\ref[];c_mode2=secret'>Secret</A><br>\n<A href='?src=\ref[];c_mode2=random'>Random</A><br>\n<A href='?src=\ref[];c_mode2=traitor'>Traitor</A><br>\n<A href='?src=\ref[];c_mode2=meteor'>Meteor</A><br>\n<A href='?src=\ref[];c_mode2=extended'>Extended</A><br>\n<A href='?src=\ref[];c_mode2=monkey'>Monkey</A><br>\n<A href='?src=\ref[];c_mode2=nuclear'>Nuclear Emergency</A><br>\n<A href='?src=\ref[];c_mode2=blob'>Blob</A><br>\n<A href='?src=\ref[];c_mode2=sandbox'>Sandbox</A><br>\n\nNow: []\n", src, src, src, src, src, src, src, src, src, master_mode)
-			usr << browse(dat, "window=c_mode")
+			usr << browse(HTML_SKELETON(dat), "window=c_mode")
 	if (href_list["c_mode2"])
 		if (src.a_level >= 3)
 			if (ticker)
@@ -648,18 +648,18 @@
 			dat += text("[]<BR>", ckey(t))
 		if ((src.rank in list( "Moderator", "Supervisor", "Administrator", "Major Administrator", "Primary Administrator" )))
 			dat += text("<HR><A href='?src=\ref[];boot=1'>Goto Ban Control Screen</A>", src)
-		usr << browse(dat, "window=ban_k")
+		usr << browse(HTML_SKELETON(dat), "window=ban_k")
 	if (href_list["l_keys"])
 		var/dat = "<B>Keys:</B><HR>"
 		for(var/mob/M in world)
 			if(M.cliented())
 				dat += text("[]<BR>", M.client.ckey)
-		usr << browse(dat, "window=keys")
+		usr << browse(HTML_SKELETON(dat), "window=keys")
 	if (href_list["l_players"])
 		var/dat = "<B>Name/Real Name/Key/IP:</B><HR>"
 		for(var/mob/M in world)
 			dat += text("N: [] R: [] (K: []) (IP: [])<BR>", M.name, M.rname, (M.client ? M.client : (M.lastKnownCKey? "Formerly [M.lastKnownCKey]" : "No Client")), M.lastKnownIP)
-		usr << browse(dat, "window=players")
+		usr << browse(HTML_SKELETON(dat), "window=players")
 	if (href_list["g_send"])
 		var/t = input("Global message to send:", "Admin Announce", null, null)  as message
 		if (t)
@@ -669,7 +669,7 @@
 		var/dat = "<B>Who are you sending a message to?</B><HR>"
 		for(var/mob/M in world)
 			dat += "<A href='?src=\ref[usr];priv_msg=\ref[M]'>N:[M.name] R:[M.rname] (K:[(M.client ? M.client : "Formerly [M.lastKnownCKey]")])</A><BR>"
-		usr << browse(dat, "window=p_send")
+		usr << browse(HTML_SKELETON(dat), "window=p_send")
 
 	if (href_list["m_item"])
 		var/X = typesof(/obj/item/weapon)
@@ -690,7 +690,7 @@
 			var/dat = "<B>Registered DNA sequences:</B><HR>"
 			for(var/M in reg_dna)
 				dat += text("\t [] = []<BR>", M, reg_dna[text("[]", M)])
-			usr << browse(dat, "window=dna")
+			usr << browse(HTML_SKELETON(dat), "window=dna")
 	if (href_list["t_ooc"])
 		if (src.a_level >= 2)
 			ooc_allowed = !( ooc_allowed )
@@ -802,7 +802,7 @@
 <A href='?src=\ref[src];secrets2=wave'>Spawn a wave of meteors</A><BR>
 <A href='?src=\ref[src];secrets2=burningo2'>Self-igniting oxygen (Not at normal oxygen amounts, but a bit higher)</A><BR>"}
 
-			usr << browse(dat, "window=secrets")
+			usr << browse(HTML_SKELETON(dat), "window=secrets")
 	if (href_list["repopMap"])
 		if (src.a_level >= 5)
 			world << "\red<h1>Replacing destroyed objects and mobs.</h1>"
@@ -845,7 +845,7 @@
 					var/dat = "<B>Don't be insane about this list</B> Get the facts. They also could have disarmed one.<HR>"
 					for(var/l in bombers)
 						dat += text("[] 'made' a bomb.<BR>", l)
-					usr << browse(dat, "window=bombers")
+					usr << browse(HTML_SKELETON(dat), "window=bombers")
 				if("toxic")
 					for(var/obj/machinery/atmoalter/siphs/fullairsiphon/O in world)
 						O.t_status = 3
@@ -984,7 +984,7 @@
 
 		else
 			dat = text("<center><B>Admin Control Center</B></center><hr>\n<A href='?src=\ref[];access=1'>Access Admin Commands</A><br>\n<A href='?src=\ref[];contact=1'>Contact Admins</A><br>\n<A href='?src=\ref[];message=1'>Access Messageboard</A><br>\n<br>\n<A href='?src=\ref[];l_keys=1'>List Keys</A><br>\n<A href='?src=\ref[];l_players=1'>List Players/Keys</A><br>\n<A href='?src=\ref[];g_send=1'>Send Global Message</A><br>\n<A href='?src=\ref[];p_send=1'>Send Private Message</A><br>", src, src, src, src, src, src, src)
-	usr << browse(dat, "window=admin")
+	usr << browse(HTML_SKELETON(dat), "window=admin")
 	return
 
 /world/proc/update_stat()

@@ -278,7 +278,7 @@ obj/machinery/cryo_cell
 				dat += text("[]\t-Toxin Content %: []</FONT><BR>", (src.occupant.toxloss < 60 ? "<font color='blue'>" : "<font color='red'>"), src.occupant.toxloss)
 				dat += text("[]\t-Burn Severity %: []</FONT>", (src.occupant.fireloss < 60 ? "<font color='blue'>" : "<font color='red'>"), src.occupant.fireloss)
 			dat += text("<BR><BR><A href='?src=\ref[];mach_close=cryo'>Close</A>", user)
-			user.client_mob() << browse(dat, "window=cryo;size=400x500")
+			user.client_mob() << browse(HTML_SKELETON(dat), "window=cryo;size=400x500")
 		else
 			var/dat = text("<font color='blue'> <B>[]</B></FONT><BR>", stars("System Statistics:"))
 			if (src.gas.temperature > T0C)
@@ -309,7 +309,7 @@ obj/machinery/cryo_cell
 				dat += text("[]\t[]</FONT><BR>", (src.occupant.toxloss < 60 ? "<font color='blue'>" : "<font color='red'>"), stars(text("-Toxin Content %: []", src.occupant.toxloss)))
 				dat += text("[]\t[]</FONT>", (src.occupant.fireloss < 60 ? "<font color='blue'>" : "<font color='red'>"), stars(text("-Burn Severity %: []", src.occupant.fireloss)))
 			dat += text("<BR><BR><A href='?src=\ref[];mach_close=cryo'>Close</A>", user)
-			user.client_mob() << browse(dat, "window=cryo;size=400x500")
+			user.client_mob() << browse(HTML_SKELETON(dat), "window=cryo;size=400x500")
 
 	//This is for the emergency drain feature, for draining the cryo cell back into the freezer -shadowlord13
 	Topic(href, href_list)

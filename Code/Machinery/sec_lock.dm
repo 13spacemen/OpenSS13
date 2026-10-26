@@ -71,7 +71,7 @@ Keycard: [src.scan ? "<A href='?src=\ref[src];card=1'>[src.scan.name]</A>" : "<A
 <A href='?src=\ref[src];em_cl=1'>Emergency Close</A><BR>
 <A href='?src=\ref[src];em_op=1'>Emergency Open</A><BR>"}
 
-			user.client_mob() << browse(dat, "window=sec_lock")
+			user.client_mob() << browse(HTML_SKELETON(dat), "window=sec_lock")
 		return
 
 

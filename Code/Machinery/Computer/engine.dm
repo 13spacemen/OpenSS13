@@ -83,7 +83,7 @@
 				dat = "<B>Engine Ejection Module</B><HR>\nStatus: Ejecting<BR>\n<BR>\nCountdown: [engine_eject_control.timeleft]/60 \[Reset\]<BR>\n<BR>\n<A href='?src=\ref[src];stop=1'>Stop Ejection</A><BR>\n<BR>\n<A href='?src=\ref[user];mach_close=computer'>Close</A>"
 			else
 				dat = "<B>Engine Ejection Module</B><HR>\nStatus: Ejected<BR>\n<BR>\nCountdown: N/60 \[Reset\]<BR>\n<BR>\nEngine Ejected!<BR>\n<BR>\n<A href='?src=\ref[user];mach_close=computer'>Close</A>"
-		user.client_mob() << browse(dat, "window=computer;size=400x500")
+		user.client_mob() << browse(HTML_SKELETON(dat), "window=computer;size=400x500")
 
 
 	// Handle topic links from interaction window

@@ -301,7 +301,7 @@
 
 	if (occ == null)
 		occ = 1
-	var/HTML = "<body>"
+	var/HTML = ""
 	HTML += "<tt><center>"
 	switch(occ)
 		if(1.0)
@@ -319,7 +319,7 @@
 	HTML += text("<a href=\"byond://?src=\ref[];occ=[];job=No Preference\">\[No Preference\]</a><br>", src, occ)
 	HTML += text("<a href=\"byond://?src=\ref[];occ=[];cancel\">\[Cancel\]</a>", src, occ)
 	HTML += "</center></tt>"
-	usr << browse(HTML, "window=mob_occupation;size=320x500")
+	usr << browse(HTML_SKELETON(HTML), "window=mob_occupation;size=320x500")
 	return
 
 /proc/uniquelist(var/list/L)

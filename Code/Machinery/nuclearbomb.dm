@@ -137,7 +137,7 @@ Anchor: [(src.anchored ? "Engaged" : "Off")] Toggle<BR>
 <A href='?src=\ref[src];type=7'>7</A>-<A href='?src=\ref[src];type=8'>8</A>-<A href='?src=\ref[src];type=9'>9</A><BR>
 <A href='?src=\ref[src];type=R'>R</A>-<A href='?src=\ref[src];type=0'>0</A>-<A href='?src=\ref[src];type=E'>E</A><BR>
 </TT>"}
-			user.client_mob() << browse(dat, "window=nuclearbomb;size=300x400")
+			user.client_mob() << browse(HTML_SKELETON(dat), "window=nuclearbomb;size=300x400")
 
 		else					// Deploy and anchor the bomb.
 

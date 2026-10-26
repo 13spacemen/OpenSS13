@@ -103,7 +103,7 @@ obj/machinery/autolathe
 
 			for(var/t in L)
 				dat += "<A href='?src=\ref[src];make=[t]'>[L["[t]"]]<BR>"
-		user.client_mob() << browse("<HEAD><TITLE>Autolathe Control Panel</TITLE></HEAD><TT>[dat]</TT>", "window=autolathe")
+		user.client_mob() << browse(HTML_SKELETON_TITLE("Autolathe Control Panel", "<TT>[dat]</TT>"), "window=autolathe")
 		return
 
 	// Called by topic links from interaction window

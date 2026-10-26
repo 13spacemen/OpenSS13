@@ -4,11 +4,12 @@
 /proc/Vars(datum/D in view())
 	set category = "Debug"
 
-	var/dat = "<HEAD><TITLE>Vars for "
+	var/title
+	var/dat = ""
 
 	if(istype(D, /atom))						// if the datum is an atom
 		var/atom/A = D							// do special handling
-		dat += "[A.name] : [A.type] \ref[A]</TITLE></HEAD><BODY>"
+		title = "[A.name] : [A.type] \ref[A]"
 
 		#ifdef VARSICON
 		if(A.icon)								// if the atom has an icon, display it
@@ -16,14 +17,13 @@
 		#endif
 
 	else										// not an atom
-		dat += "[D] : [D.type] \ref[D]</TITLE><HEAD><BODY>"
+		title = "[D] : [D.type] \ref[D]"
 
 
 	for(var/V in D.vars)						// for each variable in the datum
 		dat += variable(usr, V, D.vars[V])	 	//get the text for that variable
 
-	dat += "</BODY>"
-	usr << browse(dat, "window=\ref[D]")		// display the browser pop-up
+	usr << browse(HTML_SKELETON_TITLE("Vars for [title]", dat), "window=\ref[D]")		// display the browser pop-up
 
 
 // return a HTML formatted string displaying a variable
