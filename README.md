@@ -8,11 +8,6 @@ code migrated from the SS13.net repository.
 This repository holds the project's complete history, converted from its SourceForge SVN repository
 (122 revisions, April to August 2008).
 
-## Download
-
-[OpenSS13 1.0](https://github.com/13spacemen/OpenSS13/releases/tag/1.0-release), released on 2008-07-10, is on the
-Releases page with the original SourceForge downloads: the compiled game and the source as released.
-
 ## Building and running
 
 1. Install BYOND, which includes Dream Maker (the compiler) and Dream Daemon (the server).
@@ -65,14 +60,3 @@ Commit authors are SVN usernames. SVN stored no email addresses, so each author 
 
 Bug numbers in commit messages, such as "Fixed bug #1936685", are IDs from SourceForge's old tracker. The
 `sourceforge-tracker` branch maps every one of them to its ticket.
-
-## Contributors
-
-Commits in the SVN history are by stephen001, Zjm7891, shadowlord13, hobnob13 and murrawhip. SourceForge lists
-Stephen Badger (stephen001) and Zach McNaney (zjm7891) as the project's developers. Many more people reported bugs
-and contributed patches on the tracker.
-
-## License
-
-The SVN repository includes the GNU Lesser General Public License, version 3 (`lgpl-3.0.txt` at its top level, on the
-`svn-mirror` branch). SourceForge's project page listed LGPL version 2.
