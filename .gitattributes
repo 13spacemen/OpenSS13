@@ -1,0 +1,22 @@
+# Store text files with LF line endings and check them out as LF
+* text=auto eol=lf
+
+# BYOND binary files: never convert
+*.dmi binary
+*.dmb binary
+*.rsc binary
+*.png binary
+*.jpg binary
+*.gif binary
+*.bmp binary
+*.ico binary
+*.ogg binary
+*.wav binary
+*.mid binary
+*.midi binary
+*.mod binary
+*.s3m binary
+*.xm binary
+*.it binary
+*.ttf binary
+*.zip binary
