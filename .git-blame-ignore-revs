@@ -1,0 +1,5 @@
+# Commits that git blame should skip (GitHub uses this file automatically).
+# Locally: git config blame.ignoreRevsFile .git-blame-ignore-revs
+
+# Convert line endings to LF
+fcb3012d62379d46d0e8b59c3547e406d8476526
