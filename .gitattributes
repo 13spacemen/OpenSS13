@@ -5,7 +5,7 @@
 *.dm text eol=lf
 *.dme text eol=lf
 *.dmf text eol=lf
-*.dmp text eol=lf
+*.dmm text eol=lf
 *.htm text eol=lf
 *.html text eol=lf
 *.js text eol=lf
