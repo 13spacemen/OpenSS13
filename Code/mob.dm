@@ -3082,7 +3082,7 @@
 		src.verbs += /proc/Vars
 		#endif
 	src << text("\blue <B>[]</B>", world_message)
-	src << browse(text("[]", changes), "window=changes")
+	src << browse(HTML_SKELETON(text("[]", changes)), "window=changes")
 	if (!( isturf(src.loc) ))
 		src.client.eye = src.loc
 		src.client.perspective = EYE_PERSPECTIVE
@@ -5453,7 +5453,7 @@
 
 /mob/verb/changes()
 
-	src << browse(text("[]", changes), "window=changes")
+	src << browse(HTML_SKELETON(text("[]", changes)), "window=changes")
 	return
 
 /mob/verb/succumb()
