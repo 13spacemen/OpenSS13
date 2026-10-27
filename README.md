@@ -14,10 +14,10 @@ This repository holds the project's complete history, converted from its SourceF
 2. Open `spacestation13.dme` in Dream Maker and compile it. The map is `ss13h_new.dmm`.
 3. Host the compiled `spacestation13.dmb` with Dream Daemon.
 
-The server reads `config.txt` at startup and falls back to default settings without it. `mode.txt` holds the default game mode; the server rewrites it when the mode is changed.
+The server reads `config.txt` at startup and falls back to default settings without it. It saves the default game mode to `mode.txt` when the mode is changed, and uses its built-in default until then.
 
-The 1.0 release was compiled with BYOND 420 (2008). Current BYOND versions may need small code changes to compile
-this source; that has not been tested here.
+This branch, `1.0-modern`, is the 1.0 release updated to compile and run on current BYOND (tested with BYOND 516).
+The original 1.0 release was compiled with BYOND 420 (2008).
 
 ## Repository layout
 
@@ -26,6 +26,7 @@ this source; that has not been tested here.
 | Branch | Contents |
 |---|---|
 | `master` | SVN trunk, continued |
+| `1.0-modern` | The 1.0 release with the same BYOND 516 fixes as `master`, for playing 1.0 on current BYOND |
 | `svn-final-import` | SVN trunk exactly as it was at the last SVN revision (r122). Kept unchanged as an archive. |
 | `svn-mirror` | The whole SVN repository at every revision, including the contributor docs and build scripts that sat outside trunk |
 | `1.0-rc-1`, `1.0-rc-2` | Release branches for 1.0 RC 1, RC 2 and the final 1.0 |
