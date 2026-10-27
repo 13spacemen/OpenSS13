@@ -16,8 +16,8 @@ This repository holds the project's complete history, converted from its SourceF
 
 The server reads `config.txt` at startup and falls back to default settings without it. `mode.txt` holds the default game mode; the server rewrites it when the mode is changed.
 
-The 1.0 release was compiled with BYOND 420 (2008). Current BYOND versions may need small code changes to compile
-this source; that has not been tested here.
+This code compiles and runs on current BYOND (tested with BYOND 516). The 1.0 release was originally compiled with
+BYOND 420 (2008); the `1.0-modern` branch is 1.0 with the same updates.
 
 ## Repository layout
 
@@ -26,6 +26,7 @@ this source; that has not been tested here.
 | Branch | Contents |
 |---|---|
 | `master` | SVN trunk, continued |
+| `1.0-modern` | The 1.0 release with the same BYOND 516 fixes as `master`, for playing 1.0 on current BYOND |
 | `svn-final-import` | SVN trunk exactly as it was at the last SVN revision (r122). Kept unchanged as an archive. |
 | `svn-mirror` | The whole SVN repository at every revision, including the contributor docs and build scripts that sat outside trunk |
 | `1.0-rc-1`, `1.0-rc-2` | Release branches for 1.0 RC 1, RC 2 and the final 1.0 |
